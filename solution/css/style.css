@@ -1,0 +1,310 @@
+    body {
+        font-family: "Raleway", sans-serif;
+        color: #44545E;
+    }
+    
+    #nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1.56em;
+    }
+    
+    .navone {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        width: 56.25em;
+        margin: 0 auto;
+    }
+    
+    .navone a {
+        color: black;
+        text-decoration: none;
+    }
+    
+    .navone ul {
+        font-weight: bold;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    
+    .navtwo {
+        font-family: 'Lato', sans-serif;
+        text-align: center;
+        max-width: 18.75em;
+        margin: 0 auto;
+    }
+    
+    .navtwo ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 1.56em;
+    }
+    
+    .navtwo li {
+        color: black;
+        font-size: 2em;
+        font-weight: 400;
+        list-style: none;
+        padding: 0 20px;
+    }
+    
+    #headerimage {
+        background-image: url("../images/header_image.jpg");
+        height: 31.14em;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 1em 0 4em 0;
+        background-attachment: fixed;
+    }
+    
+    h1 {
+        color: black;
+        font-size: 2em;
+        font-weight: 400;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.63em
+    }
+    
+    #headerimage h1 {
+        margin: 10px;
+    }
+    
+    #headerimage h2 {
+        color: white;
+    }
+    
+    h2 {
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: 400;
+        text-align: center;
+        color: black;
+    }
+    
+    h3 {
+        color: black;
+        font-size: .5em;
+        text-align: center;
+    }
+    
+    p {
+        font-family: 'Lato', sans-serif;
+        font-size: .8em;
+        text-align: center;
+    }
+    
+    .work a {
+        color: black;
+        font-size: 0.7em;
+        text-align: center;
+        border: .02em black solid;
+        display: block;
+        width: 40%;
+        text-decoration: none;
+        padding: 10px 5px 10px 5px;
+        margin: 0 10px 40px 90px;
+    }
+    
+    .footer p {
+        padding: 2.5em 0;
+    }
+    
+    li {}
+    
+    .footer {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.75em;
+        font-weight: bold;
+        background-color: #CDF3F6;
+        min-height: 6.25em;
+        padding-top: 1.25em;
+    }
+    
+    .col-1-2 {
+        width: 20%;
+    }
+    
+    .main {
+        margin: 2.5em 3.75em;
+    }
+    
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .work {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .wrap h2 {
+        text-align: center;
+    }
+    
+    #commentForm {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin: 3.75em;
+        padding: 0 0 4.38em 0;
+    }
+    
+    #commentForm input {
+        margin: 1.25em 0;
+        border: #44545E .2em solid;
+        text-transform: uppercase;
+        padding: 1.25em 0.63em;
+        box-sizing: border-box;
+    }
+    
+    #commentForm textarea,
+    #commentForm button {
+        margin: 0.63em;
+        background-color: white;
+        border: #44545E .2em solid;
+        text-transform: uppercase;
+        padding: 1.25em 0.63em;
+    }
+    
+    .col-1-3 {
+        width: 30%;
+    }
+    
+    .col-3-3 {
+        width: 100%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+    
+    #keep-in-touch button {
+        padding: 0.94em 0;
+        margin: 1.25em;
+        background-color: white;
+        border: #44545E .2em solid;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    #keep-in-touch input {
+        padding: 0.94em 0;
+        margin: 1.25em;
+        background-color: white;
+        border: #44545E .2em solid;
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    .aside {
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 0.75em;
+        font-weight: bold;
+        background-color: black;
+        min-height: 6.25em;
+        padding: 6.25em;
+    }
+    
+    .aside h2 {
+        color: white;
+    }
+    
+    .hamburger {
+        display: none;
+    }
+    
+    #gallery {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    #gallery .col-1-3 {
+        width: 26%;
+    }
+    
+    a:hover {
+        background-color: yellow;
+        -webkit-transition-duration: 0.4s;
+        transition: width 2s;
+    }
+    
+    #commentForm button:hover {
+        background-color: lightblue;
+        transition: width 2s;
+    }
+    
+    #keep-in-touch button:hover {
+        background-color: lightblue;
+        transition: width 3s;
+    }
+    /*************@media query***********************/
+    
+    @media (max-width: 35em) {
+        html {
+            font-size: .5em;
+            background-color: white;
+        }
+        .hamburger {
+            display: block;
+        }
+        .navone ul {
+            display: none;
+        }
+        .col-1-3 {
+            width: 100%;
+        }
+    }
+    
+    #gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 400px;
+        width: 80%;
+        margin: 20px 10px 0px 10px;
+    }
+    
+    h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2em;
+    }
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    /*-------commet-form--------*/
+    /*use this class using jQuery if a field is left blank*/
+    
+    .error {
+        border: 2px solid #ED5254 !important;
+    }
+    
+    span {
+        color: #ED5254;
+        opacity: 50%;
+        display: none;
+        font-size: 10px;
+        text-align: left;
+    }
