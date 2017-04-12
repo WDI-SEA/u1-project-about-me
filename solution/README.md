@@ -1,0 +1,5 @@
+- A `README.md` file with explanations of:
+  - Technologies used.
+  - Your process/approach.
+  - Unsolved problems.
+  - Your biggest wins and challenges.

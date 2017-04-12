@@ -1,0 +1,88 @@
+/*temporary styling - remove later*/
+
+section {
+    height: 40em;
+}
+
+
+/*end of temporary styling here*/
+
+body {
+    /*remove the default margins from the page*/
+    /*to remove the white edges from the page*/
+    margin: 0;
+    /*calculate the box sizing including the box*/
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+header {
+    background-color: blue;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: blue;
+    /* Set the navbar to fixed position */
+    position: fixed;
+    /* Position the navbar at the top of the page */
+    top: 0;
+    /* Full width */
+    width: 100%;
+}
+
+#about,
+#projects,
+#testamonials,
+#contactForm {
+    /* Add top padding to avoid content overlay */
+    padding-top: 6em;
+}
+
+#about {
+    background-color: skyblue;
+}
+
+#projects {
+    background-color: rebeccapurple;
+}
+
+#testamonials {
+    background-color: teal;
+}
+
+#contactForm {
+    background-color: turquoise;
+}
+
+footer {
+    background-color: lightblue;
+}
+
+.center {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 1em 1.5em;
+    display: inline-block;
+}
+
+.active {
+    color: red;
+    border-bottom: orange;
+}
