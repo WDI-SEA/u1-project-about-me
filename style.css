@@ -62,11 +62,12 @@ header h2 {
 }
 
 .headerPic {
-    background-image: url(images/headerBarRed.png);
+/*    background-image: url(images/headerBarRed.png);
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
     width: 100%;
+*/
 }
 
 
