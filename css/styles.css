@@ -1,0 +1,135 @@
+* {
+    font-family: "Muli", sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+a {
+    color: #6899AE;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+
+/* ================================== */
+
+
+/* ============= HEADER ============= */
+
+
+/* ================================== */
+
+header {
+    background-color: #715956;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    height: 3em;
+    /*padding-top: 1.5em;*/
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.header-logo {
+    height: 90%;
+}
+
+nav {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+/* ===================================== */
+
+
+/* ============= SLIDESHOW ============= */
+
+
+/* ===================================== */
+
+#slideshow {
+    background-color: #E5E0E0;
+    height: 40em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#mainPhotos {
+    width: 80%;
+    padding-left: 10% auto;
+    padding-right: 10% auto;
+    height: 80%;
+}
+
+.slideshow-photo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+
+/* ===================================== */
+
+
+/* =============== ABOUT =============== */
+
+
+/* ===================================== */
+
+#about {
+    background-color: #F2EFEF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+#welcome {
+    width: 50%;
+}
+
+#faq {
+    width: 30%;
+}
+
+
+/* ===================================== */
+
+
+/* ============ Testimonials ============ */
+
+
+/* ===================================== */
+
+#testimonials {
+    background: url('../css/images/table.jpg');
+    width: 100%;
+    height: 30em;
+    background-size: cover;
+    background-position: center;
+}
