@@ -62,7 +62,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 1em 0 4em 0;
+        margin: 1em 0 0 0;
         background-attachment: fixed;
     }
     
@@ -98,12 +98,12 @@
     }
     
     p {
+        color: white;
         font-family: 'Lato', sans-serif;
         font-size: .8em;
         text-align: center;
     }
-    
-    .work a {
+    /*    .work a {
         color: black;
         font-size: 0.7em;
         text-align: center;
@@ -113,7 +113,7 @@
         text-decoration: none;
         padding: 10px 5px 10px 5px;
         margin: 0 10px 40px 90px;
-    }
+    }*/
     
     .footer p {
         padding: 2.5em 0;
@@ -126,7 +126,7 @@
         text-transform: uppercase;
         font-size: 0.75em;
         font-weight: bold;
-        background-color: #CDF3F6;
+        background-color: white;
         min-height: 6.25em;
         padding-top: 1.25em;
     }
@@ -144,11 +144,17 @@
         height: auto;
     }
     
+    .work h3 {
+        color: white;
+    }
+    
     .work {
+        background-color: black;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
+        padding: 50px;
     }
     
     .wrap h2 {
@@ -210,13 +216,12 @@
     
     .aside {
         color: white;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 0.75em;
+        text-align: left;
+        font-size: 20px;
         font-weight: bold;
         background-color: black;
         min-height: 6.25em;
-        padding: 6.25em;
+        padding: 3em;
     }
     
     .aside h2 {
