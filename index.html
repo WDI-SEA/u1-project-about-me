@@ -6,6 +6,8 @@
     <meta name="description" content="415 Westlake is a distinctive event space in Downtown Seattle's Westlake neighborhood.">
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Droid+Serif:400,700" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="main.js"></script>
     <script src="https://use.fontawesome.com/0044452a4c.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>415 Westlake | Downtown Seattle Event Space</title>
@@ -24,8 +26,18 @@
     </header>
     <div id="slideshow">
         <div id="mainPhotos">
-            <img src="css/images/WeddingSetting1
-.jpg" class="slideshow-photo" alt="wedding venue">
+            <img src="css/images/slideshow/slide1.jpg" class="slideshow-photo" alt="wedding venue">
+            <img src="css/images/slideshow/slide2.jpg" class="slideshow-photo hidden" alt="auditorium">
+            <img src="css/images/slideshow/slide3.jpg" class="slideshow-photo hidden" alt="coffee lounge">
+            <img src="css/images/slideshow/slide4.jpg" class="slideshow-photo hidden" alt="415 Westlake rental">
+            <img src="css/images/slideshow/slide5.jpg" class="slideshow-photo hidden" alt="fundraiser venue">
+        </div>
+        <div class="slideshow-nav">
+            <i id="dot1" class="fa fa-circle"></i>
+            <i id="dot2" class="fa fa-circle"></i>
+            <i id="dot3" class="fa fa-circle"></i>
+            <i id="dot4" class="fa fa-circle"></i>
+            <i id="dot5" class="fa fa-circle"></i>
         </div>
         <div id="about">
             <div id="welcome">
@@ -56,11 +68,25 @@
                 <h2>Contact Us</h2>
                 <p>Ready to book an event? <a href="#">Let's discuss the details.</a></p>
                 <p>For general inquiries, please fill out the form below.</p>
-                <input type="text" placeholder="Your name">
-                <input type="text" placeholder="Your phone number">
-                <input type="text" placeholder="Your email address">
-                <input type="textarea" placeholder="Your message">
-                <input type="submit" value="Send" class="submit-btn">
+                <form action="#" method="get" class="form">
+                    <div class="form-name">
+                        <input type="text" class="basic-form" placeholder="Your name">
+                        <p class="form-error">Please enter your first and last name.</p>
+                    </div>
+                    <div class="form-num">
+                        <input type="text" class="basic-form" placeholder="Your phone number">
+                        <p class="form-error">Please enter a valid phone number.</p>
+                    </div>
+                    <div class="form-email">
+                        <input type="email" class="basic-form" placeholder="Your email address">
+                        <p class="form-error">Please enter a valid email address.</p>
+                    </div>
+                    <div class="form-message">
+                        <input type="textarea" class="basic-form" placeholder="Your message">
+                        <p class="form-error">Please enter a short message.</p>
+                    </div>
+                    <input type="submit" value="Send" class="submit-btn">
+                </form>
             </div>
             <div id="connect">
                 <h3>Connect With Us</h3>
@@ -83,4 +109,3 @@
 </body>
 
 </html>
-<script src="main.js"></script>

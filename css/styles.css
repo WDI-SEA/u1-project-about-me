@@ -130,6 +130,26 @@ nav a:hover {
     object-fit: cover;
 }
 
+.slideshow-nav {
+    margin-top: -40px;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.fa-circle {
+    color: white;
+    font-size: 20px;
+}
+
+#dot1,
+#dot2,
+#dot3,
+#dot4,
+#dot5 {
+    color: white;
+    font-size: 20px;
+}
+
 
 /* ===================================== */
 
@@ -259,6 +279,7 @@ nav a:hover {
     margin-bottom: 10px;
     padding: 10px;
     margin-top: 10px;
+    width: 100%;
 }
 
 .submit-btn {
@@ -345,4 +366,31 @@ footer p {
     padding-top: 20px;
     margin: 0;
     font-family: "Muli", sans-serif;
+}
+
+
+/* ===================================== */
+
+
+/* ============== ERRORS =============== */
+
+
+/* ===================================== */
+
+
+/*.error {
+    background-color: ;
+}
+*/
+
+.form-error {
+    display: none;
+    color: #ED5254;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.hidden {
+    display: none;
 }
