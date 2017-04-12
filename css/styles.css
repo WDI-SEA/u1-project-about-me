@@ -1,5 +1,7 @@
 * {
     font-family: "Muli", sans-serif;
+    color: #0B0908;
+    box-sizing: border-box;
 }
 
 body {
@@ -11,6 +13,27 @@ a {
     text-transform: uppercase;
     text-decoration: none;
     font-weight: 800;
+    letter-spacing: .1em;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 15px;
 }
 
 
@@ -33,6 +56,7 @@ header {
     justify-content: space-around;
     padding-left: 50px;
     padding-right: 50px;
+    border-bottom: 7px solid #483937;
 }
 
 .header-logo {
@@ -111,10 +135,13 @@ nav a {
 
 #welcome {
     width: 50%;
+    font-size: 18px;
+    line-height: 25px;
 }
 
 #faq {
     width: 30%;
+    font-size: 14px;
 }
 
 
@@ -127,9 +154,113 @@ nav a {
 /* ===================================== */
 
 #testimonials {
-    background: url('../css/images/table.jpg');
+    background: url('../css/images/table-2.jpg');
     width: 100%;
-    height: 30em;
+    height: 20em;
     background-size: cover;
-    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote {
+    box-sizing: border-box;
+    text-align: center;
+    width: 70%;
+    align-self: center;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 30px 50px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+}
+
+.read-more a {
+    background-color: #6899AE;
+    font-weight: 400;
+    letter-spacing: .1em;
+    padding: 10px;
+    color: #F2EFEF;
+}
+
+.read-more {
+    margin-top: -10px;
+}
+
+
+/* ===================================== */
+
+
+/* ========== CONTACT CONNECT ========== */
+
+
+/* ===================================== */
+
+#contact {
+    background-color: #F2EFEF;
+    box-sizing: border-box;
+    height: 30em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 2em;
+}
+
+#contact h2 {
+    margin-bottom: 0;
+}
+
+#contact-form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact-form p {
+    margin: 0;
+}
+
+#contact-form a {
+    text-transform: none;
+}
+
+#contact-form input {
+    box-sizing: border-box;
+    border-style: none;
+    padding: 5px;
+    font-size: 15px;
+}
+
+.submit-btn {
+    color: #F2EFEF;
+    background-color: #6899AE;
+}
+
+#contact-form #connect {
+    width: 30%;
+}
+
+
+/* ===================================== */
+
+
+/* ============== FOOTER =============== */
+
+
+/* ===================================== */
+
+footer {
+    background-color: #715956;
+    height: 4em;
+    color: white;
+}
+
+footer p {
+    color: white;
+    text-align: center;
+    padding-top: 20px;
 }
