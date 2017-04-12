@@ -16,6 +16,10 @@ a {
     letter-spacing: .1em;
 }
 
+a:hover {
+    color: #9A9500;
+}
+
 h1 {
     font-size: 35px;
 }
@@ -36,6 +40,10 @@ h5 {
     font-size: 15px;
 }
 
+p {
+    font-family: "Droid Serif", serif;
+}
+
 
 /* ================================== */
 
@@ -51,7 +59,6 @@ header {
     flex-direction: row;
     top: 0;
     height: 3em;
-    /*padding-top: 1.5em;*/
     align-items: center;
     justify-content: space-around;
     padding-left: 50px;
@@ -142,6 +149,7 @@ nav a {
 #faq {
     width: 30%;
     font-size: 14px;
+    color: #9A9500;
 }
 
 
@@ -184,6 +192,10 @@ nav a {
     color: #F2EFEF;
 }
 
+.read-more a:hover {
+    background-color: #9A9500;
+}
+
 .read-more {
     margin-top: -10px;
 }
@@ -200,13 +212,18 @@ nav a {
 #contact {
     background-color: #F2EFEF;
     box-sizing: border-box;
-    height: 30em;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 2em;
+    font-size: 16px;
+}
+
+#contact p {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 #contact h2 {
@@ -220,28 +237,78 @@ nav a {
     justify-content: space-between;
 }
 
-#contact-form p {
-    margin: 0;
-}
-
 #contact-form a {
     text-transform: none;
+    letter-spacing: normal;
 }
 
 #contact-form input {
     box-sizing: border-box;
     border-style: none;
-    padding: 5px;
-    font-size: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .submit-btn {
     color: #F2EFEF;
     background-color: #6899AE;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
 }
 
-#contact-form #connect {
+.submit-btn:hover {
+    background-color: #9A9500;
+}
+
+#connect {
     width: 30%;
+    color: #0B0908;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fa {
+    font-size: 40px;
+    color: #6899AE;
+}
+
+.fa:hover {
+    color: #9A9500;
+}
+
+#connect p {
+    line-height: 22px;
+    margin-top: 2em;
+    border-top: 1px solid #715956;
+    padding-top: 2em;
+    margin-bottom: 0;
+}
+
+#logos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.other-logos {
+    width: 45%;
+}
+
+.other-logos img {
+    width: 100%;
+    padding-top: 20px;
 }
 
 
@@ -257,10 +324,13 @@ footer {
     background-color: #715956;
     height: 4em;
     color: white;
+    margin: 0;
 }
 
 footer p {
     color: white;
     text-align: center;
     padding-top: 20px;
+    margin: 0;
+    font-family: "Muli", sans-serif;
 }
