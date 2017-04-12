@@ -1,7 +1,7 @@
 /*temporary styling - remove later*/
 
 section {
-    height: 40em;
+    min-height: 34em;
 }
 
 
@@ -35,6 +35,10 @@ header {
     width: 100%;
 }
 
+img {
+    width: 25%;
+}
+
 #about,
 #projects,
 #testamonials,
@@ -48,7 +52,7 @@ header {
 }
 
 #projects {
-    background-color: rebeccapurple;
+    background-color: white;
 }
 
 #testamonials {
@@ -56,15 +60,27 @@ header {
 }
 
 #contactForm {
-    background-color: turquoise;
+    background-color: white;
 }
 
 footer {
-    background-color: lightblue;
+    background-color: blue;
+    height: 4em;
 }
 
 .center {
     text-align: center;
+}
+
+.center img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.centerBlock {
+    margin-right: auto;
+    margin-left: auto;
 }
 
 ul {
@@ -78,11 +94,62 @@ li {
 a {
     text-decoration: none;
     color: white;
-    padding: 1em 1.5em;
+    padding: .3em;
+    margin: .7em;
     display: inline-block;
 }
 
 .active {
-    color: red;
-    border-bottom: orange;
+    color: yellow;
+    border-bottom: 1px solid yellow;
+}
+
+h1 {
+    display: inline-block;
+    color: white;
+    font-size: 2.7em;
+    padding: .2em;
+    margin: .3em;
+    border-bottom: 3px solid white;
+}
+
+h3 {
+    display: inline-block;
+    color: white;
+    font-size: 1.5em;
+    padding: .2em;
+    border-bottom: 3px solid white;
+}
+
+#projects h3,
+#contactForm h3 {
+    color: black;
+    border-bottom: 3px solid black;
+}
+
+h5 {
+    color: white;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.col-1-2 {
+    width: 40%;
+}
+
+#about p {
+    color: white;
+}
+
+#testamonials p {
+    color: white;
+    width: 70%;
+}
+
+.quotes {
+    display: none;
 }
