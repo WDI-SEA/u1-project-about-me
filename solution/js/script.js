@@ -21,3 +21,11 @@ $(function() {
     });
 
 });
+
+
+// --------jQuery slidedown-------
+function slideDown() {
+    $("hide").on("mouseover", function() {
+            $("hide").classList.remove('hide');
+        }
+    });
