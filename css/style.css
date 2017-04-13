@@ -1,28 +1,30 @@
 body {
     padding: 0;
     margin: 0;
-    font-family: 'chewy', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 
-/* Global */
+/*/* Global */
 
-
-/*.container {
-    width: 80%;
+.container {
     margin: auto;
     overflow: hidden;
-}*/
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
 
 
 /* Header **/
 
 header {
-    background: #F4A698;
-    color: #ffffff;
-    padding-top: 30px;
+    /* background: url("images/kauai.jpg") no-repeat;*/
     min-height: 70px;
     border-bottom: #73A580 7px solid;
+    padding: 0;
 }
 
 header a {
@@ -39,9 +41,10 @@ header li {
     padding: 10px 20px 10px 20px;
 }
 
-header #banner {
+
+/*header #banner {
     float: left;
-}
+}*/
 
 header #banner h1 {
     margin: 0;
@@ -50,10 +53,37 @@ header #banner h1 {
 }
 
 header nav {
-    float: right;
-    margin-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 50px solid white;
+    background: #eee;
+    padding: 15px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    position: fixed;
+}
+
+.sticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    border-top: 0;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.nav_bar {
+    position: fixed;
+}
+
+header h1 {
+    text-align: center;
 }
 
 header a:hover {
@@ -62,13 +92,62 @@ header a:hover {
 }
 
 
+/**********FRONT COVER*******************/
+
+.container-cover {
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+}
+
+.container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    min-width: 50%;
+    min-height: 50%;
+    opacity: 50%;
+}
+
+
+/*************Slider***********************/
+
+
+/*#slider {
+    width: 720px;
+    height: 400px;
+    overflow: hidden;
+}
+
+#slider .slides {
+    display: block;
+    width: 6000px;
+    height: 400px;
+    margin: 0;
+    padding: 0;
+}
+
+#slider .slide {
+    float: left;
+    list-style-type: none;
+    width: 720px;
+    height: 400px;
+}*/
+
+
 /*****************MIDDLE BOX**************/
 
 .container-1 {
     margin: 0;
-    background-color: #EEF5DB;
-    min-height: 800px;
-    padding-top: 10px;
+    background-color: gray;
+    min-height: 600px;
+    padding-top: 40px;
+    margin-top: 20px;
 }
 
 .container-1 h3 {
@@ -82,16 +161,22 @@ header a:hover {
 }
 
 .label img {
-    border-radius: 50%;
-    padding: 5px;
-    width: 150px;
+    border-radius: 80%;
+    padding: 25px;
+    width: 300px;
     margin: auto;
     display: block;
+    border: 25px solid white;
 }
 
 img {
     margin: 0 auto;
     width: 70%;
+}
+
+.label {
+    padding-bottom: 45px;
+    padding-top: 45px;
 }
 
 
@@ -102,11 +187,24 @@ img {
     text-align: center;
 }
 
+.wrapper .say {
+    border-bottom: 10px solid #eee;
+}
+
 
 /* Forms*/
 
 form input {
     border-color: black;
+    float: left;
+}
+
+.formbox {
+    margin-bottom: 50px;
+    width: 40%;
+    padding: 25px;
+    background-color: darkgray;
+    float: right;
 }
 
 
