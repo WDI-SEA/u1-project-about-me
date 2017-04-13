@@ -51,6 +51,17 @@ li a {
     margin: 0 2em;
 }
 
+li a:hover {
+    /*display: inline-block;*/
+    color: #B2252B;
+    font-weight: 600;
+    /*font-size: 1.2em;*/
+    letter-spacing: 0em;
+    text-decoration: none;
+    margin: 0 2em;
+    text-transform: uppercase;
+}
+
 .clearFix:after {
     content: " ";
     visibility: hidden;
@@ -78,7 +89,6 @@ header h1 {
 }
 
 .about,
-.gallery,
 .quotes,
 .contact {
     text-align: left;
@@ -105,7 +115,7 @@ header h1 {
 /*===hr===*/
 
 hr {
-    width: 50%;
+    width: 60%;
     height: 3px;
     background-color: #1f282d;
     margin: 0 auto 5%;
@@ -115,12 +125,24 @@ hr {
 
 /*===gallery===*/
 
+#gallery {
+    width: 70%;
+    margin: 5% auto;
+}
+
 .gallery h1 {
     font-weight: 400;
     font-size: 1.5em;
     letter-spacing: 0.2em;
-    margin: 1% 0;
+    margin: 5% auto;
     text-align: center;
+    width: 100%;
+    color: #3d4d58;
+}
+
+#imagebox img {
+    display: block;
+    margin: 3% auto;
 }
 
 
@@ -180,7 +202,7 @@ hr {
 }
 
 .col-1-3 {
-    width: 28%;
+    width: 31%;
     margin-bottom: .6em;
 }
 
@@ -192,16 +214,20 @@ input {
     width: 100%;
     margin: 2% 0;
     border-style: none;
-    border: 1px solid #495d69;
-    /*    color: #3d4d58;
-*/
+    border: 1px solid transparent;
+    box-sizing: border-box;
+    overflow: auto;
+    /*border was: #495d69;*/
 }
 
 textarea {
     width: 100%;
     border-style: none;
-    border: 1px solid #495d69;
+    border: 1px solid transparent;
     margin: 0;
+    box-sizing: border-box;
+    resize: none;
+    overflow: auto;
 }
 
 #submitButt:hover {
@@ -246,6 +272,11 @@ footer {
     text-decoration: none;
 }
 
+#icons a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
 #copy {
     width: 50%;
     text-align: center;
@@ -258,9 +289,29 @@ footer {
 
 @media (max-width: 560px) {
     .hamburger {
-        font-size: 4em;
+        font-size: 3em;
         position: fixed;
-        left: 0;
-        color: #000;
+        left: .5em;
+        color: #495d69;
     }
+    li a {
+        display: block;
+        color: #849fb0;
+        font-weight: 400;
+        font-size: 1.6em;
+        letter-spacing: 0.2em;
+        text-decoration: none;
+        margin: 0 2em;
+    }
+    li a:hover {
+        /*display: inline-block;*/
+        color: #B2252B;
+        font-weight: 600;
+        /*font-size: 1.2em;*/
+        letter-spacing: 0em;
+        text-decoration: none;
+        margin: 0 2em;
+        text-transform: uppercase;
+    }
+    /*===End of MediaQuery===*/
 }
