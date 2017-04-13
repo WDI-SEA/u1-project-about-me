@@ -1,5 +1,8 @@
 $(function() {
-
+    $("#title").on("mouseover", function() {
+        $("*").removeClass('hidden');
+        $("#title").addClass('hidden');
+    });
 
     $(".submit").on('click', function(event) {
         event.preventDefault();
@@ -16,16 +19,7 @@ $(function() {
                 $(this).siblings().fadeIn(1000);
             }
         });
-
-
     });
+    // hide title page
 
 });
-
-
-// --------jQuery slidedown-------
-function slideDown() {
-    $("hide").on("mouseover", function() {
-            $("hide").classList.remove('hide');
-        }
-    });
