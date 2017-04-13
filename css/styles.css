@@ -1,383 +1,431 @@
-    * {
-        font-family: "Muli", sans-serif;
-        color: #0B0908;
-        box-sizing: border-box;
-    }
-    
-    body {
-        margin: 0;
-    }
-    
-    a {
-        color: #6899AE;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: 800;
-        letter-spacing: .1em;
-    }
-    
-    a:hover {
-        color: #9A9500;
-    }
-    
-    h1 {
-        font-size: 35px;
-    }
-    
-    h2 {
-        font-size: 28px;
-    }
-    
-    h3 {
-        font-size: 23px;
-    }
-    
-    h4 {
-        font-size: 18px;
-    }
-    
-    h5 {
-        font-size: 15px;
-        margin-bottom: 5px;
-    }
-    
-    p {
-        font-family: "Droid Serif", serif;
-    }
-    /* ================================== */
-    /* ============= HEADER ============= */
-    /* ================================== */
-    
-    header {
-        background-color: white;
-        display: flex;
-        flex-direction: row;
-        top: 0;
-        box-sizing: border-box;
-        justify-content: space-around;
-        padding-left: 50px;
-        padding-right: 50px;
-        box-shadow: 0px .5px 5px #715956;
-        /*border-bottom: 3px solid #715956;*/
-        position: fixed;
-        width: 100%;
-    }
-    
-    .main-nav-logo {
-        width: 8em;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-    
-    .main-nav-logo-img {
-        width: 100%;
-    }
-    
-    nav {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-        align-items: center;
-    }
-    
-    nav a {
-        color: #483937;
-        text-decoration: none;
-        text-transform: uppercase;
-        letter-spacing: .2em;
-        font-size: 15px;
-        font-weight: 400;
-    }
-    
-    nav a:hover {
-        color: #6899AE;
-    }
-    /* ===================================== */
-    /* ============= SLIDESHOW ============= */
-    /* ===================================== */
-    
-    #slideshow {
-        background-color: #E5E0E0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        box-sizing: border-box;
-    }
-    
-    #mainPhotos {
-        width: 100%;
-        padding-left: 10% auto;
-        padding-right: 10% auto;
-        height: 45em;
-    }
-    
-    .slideshow-photo {
-        width: 100%;
-        height: 100%;
-        display: block;
-        object-fit: cover;
-    }
-    
-    .slideshow-nav {
-        margin-top: -40px;
-        padding-bottom: 10px;
-        letter-spacing: 5px;
-    }
-    
-    .fa-circle {
-        color: white;
-        font-size: 20px;
-    }
-    
-    #dot1,
-    #dot2,
-    #dot3,
-    #dot4,
-    #dot5 {
-        color: white;
-        font-size: 20px;
-    }
-    /* ===================================== */
-    /* =============== ABOUT =============== */
-    /* ===================================== */
-    
-    #about {
-        background-color: white;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-left: 8%;
-        padding-right: 8%;
-        padding-top: 4em;
-        padding-bottom: 4em;
-    }
-    
-    #welcome {
-        width: 50%;
-        font-size: 18px;
-        line-height: 25px;
-    }
-    
-    #faq {
-        width: 30%;
-        font-size: 14px;
-        color: #9A9500;
-    }
-    /* ===================================== */
-    /* ============ Testimonials ============ */
-    /* ===================================== */
-    
-    #testimonials {
-        background: url('../css/images/table-2.jpg');
-        width: 100%;
-        height: 20em;
-        background-size: cover;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    #quote {
-        box-sizing: border-box;
-        text-align: center;
-        width: 70%;
-        align-self: center;
-        background-color: rgba(255, 255, 255, .5);
-        padding: 30px 50px;
-        font-size: 16px;
-        font-style: italic;
-        line-height: 24px;
-    }
-    
-    .read-more a {
-        background-color: #6899AE;
-        font-weight: 400;
-        letter-spacing: .1em;
-        padding: 10px;
-        color: #F2EFEF;
-    }
-    
-    .read-more a:hover {
-        background-color: #9A9500;
-    }
-    
-    .read-more {
-        margin-top: -10px;
-    }
-    /* ===================================== */
-    /* ========== MAP & CONNECT ========== */
-    /* ===================================== */
-    
-    #contact {
-        background-color: #F2EFEF;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        padding-left: 10%;
-        padding-right: 10%;
-        padding-bottom: 1em;
-        font-size: 16px;
-    }
-    
-    #hpmap {
-        width: 50%;
-        padding-top: 20px;
-    }
-    
-    #connect {
-        width: 30%;
-        color: #0B0908;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        flex-wrap: wrap;
-    }
-    
-    #social {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    
-    .fa {
-        font-size: 40px;
-        color: #6899AE;
-    }
-    
-    .fa:hover {
-        color: #9A9500;
-    }
-    
-    #connect p {
-        line-height: 22px;
-        margin-top: 2em;
-        border-top: 1px solid #715956;
-        padding-top: 2em;
-        margin-bottom: 0;
-    }
-    
-    #logos {
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-    }
-    
-    .other-logos {
-        width: 45%;
-    }
-    
-    .other-logos img {
-        width: 100%;
-        padding-top: 20px;
-    }
-    /* ===================================== */
-    /* ============== FOOTER =============== */
-    /* ===================================== */
-    
-    footer {
-        background-color: #715956;
-        height: 4em;
-        color: white;
-        margin: 0;
-        width: 100%;
-    }
-    
-    footer p {
-        color: white;
-        text-align: center;
-        padding-top: 20px;
-        margin: 0;
-        font-family: "Muli", sans-serif;
-    }
-    /* ===================================== */
-    /* =========== CONTACT FORM ============ */
-    /* ===================================== */
-    
-    #contact-form {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-    
-    #intro {
-        width: 70%;
-        align-self: center;
-    }
-    
-    .form {
-        display: flex;
-        box-sizing: border-box;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 70%;
-        padding: 0;
-        align-self: center;
-        flex-wrap: wrap;
-    }
-    
-    .form-section {
-        width: 30%;
-    }
-    
-    .basic-form {
-        width: 100%;
-        padding: 0;
-        margin-bottom: 10px;
-        margin-top: 20px;
-    }
-    
-    #type-of-services,
-    #type-of-event {
-        width: 50%;
-        margin-bottom: 30px;
-    }
-    
-    #hear-about-us {
-        width: 100%;
-    }
-    
-    label {
-        position: absolute;
-    }
-    
-    .submit-btn {
-        color: #F2EFEF;
-        background-color: #6899AE;
-        font-size: 16px;
-        text-transform: uppercase;
-        letter-spacing: .1em;
-        width: 30%;
-        margin-bottom: 1em;
-        margin-top: 1em;
-        border-style: none;
-    }
-    
-    .submit-btn:hover {
-        background-color: #9A9500;
-    }
-    /* =====================================
+* {
+    font-family: "Muli", sans-serif;
+    color: #0B0908;
+    box-sizing: border-box;
+}
 
+body {
+    margin: 0;
+}
+
+a {
+    color: #6899AE;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: .1em;
+}
+
+a:hover {
+    color: #9A9500;
+}
+
+h1 {
+    font-size: 35px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 23px;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+p {
+    font-family: "Droid Serif", serif;
+}
+
+
+/* ================================== */
+
+
+/* ============= HEADER ============= */
+
+
+/* ================================== */
+
+header {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    box-sizing: border-box;
+    justify-content: space-around;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0px .5px 5px #715956;
+    /*border-bottom: 3px solid #715956;*/
+    position: fixed;
+    width: 100%;
+}
+
+.main-nav-logo {
+    width: 8em;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main-nav-logo-img {
+    width: 100%;
+}
+
+.main-nav-logo:hover {
+    opacity: .4;
+    transition-duration: 2s;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+nav a {
+    color: #483937;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    font-size: 15px;
+    font-weight: 600;
+    text-shadow: none;
+}
+
+nav a:hover {
+    color: #6899AE;
+}
+
+
+/* ===================================== */
+
+
+/* ============= SLIDESHOW ============= */
+
+
+/* ===================================== */
+
+#slideshow {
+    background-color: #E5E0E0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+#mainPhotos {
+    width: 100%;
+    padding-left: 10% auto;
+    padding-right: 10% auto;
+    height: 45em;
+}
+
+.slideshow-photo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.slideshow-nav {
+    margin-top: -40px;
+    padding-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.fa-circle {
+    color: white;
+    font-size: 20px;
+}
+
+#dot1,
+#dot2,
+#dot3,
+#dot4,
+#dot5 {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* ===================================== */
+
+
+/* =============== ABOUT =============== */
+
+
+/* ===================================== */
+
+#about {
+    background-color: white;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
+
+#welcome {
+    width: 50%;
+    font-size: 18px;
+    line-height: 25px;
+}
+
+#faq {
+    width: 30%;
+    font-size: 14px;
+    color: #9A9500;
+}
+
+
+/* ===================================== */
+
+
+/* ============ Testimonials ============ */
+
+
+/* ===================================== */
+
+#testimonials {
+    background: url('../css/images/table-2.jpg');
+    width: 100%;
+    height: 20em;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#quote {
+    box-sizing: border-box;
+    text-align: center;
+    width: 70%;
+    align-self: center;
+    background-color: rgba(255, 255, 255, .5);
+    padding: 30px 50px;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+}
+
+.read-more a {
+    background-color: #6899AE;
+    font-weight: 400;
+    letter-spacing: .1em;
+    padding: 10px;
+    color: #F2EFEF;
+}
+
+.read-more a:hover {
+    background-color: #9A9500;
+}
+
+.read-more {
+    margin-top: -10px;
+}
+
+
+/* ===================================== */
+
+
+/* ========== MAP & CONNECT ========== */
+
+
+/* ===================================== */
+
+#contact {
+    background-color: #F2EFEF;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 1em;
+    font-size: 16px;
+}
+
+#hpmap {
+    width: 50%;
+    padding-top: 20px;
+}
+
+#connect {
+    width: 30%;
+    color: #0B0908;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fa {
+    font-size: 40px;
+    color: #6899AE;
+}
+
+.fa:hover {
+    color: #9A9500;
+}
+
+#connect p {
+    line-height: 22px;
+    margin-top: 2em;
+    border-top: 1px solid #715956;
+    padding-top: 2em;
+    margin-bottom: 0;
+}
+
+#logos {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.other-logos {
+    width: 45%;
+}
+
+.other-logos img {
+    width: 100%;
+    padding-top: 20px;
+}
+
+
+/* ===================================== */
+
+
+/* =========== CONTACT FORM ============ */
+
+
+/* ===================================== */
+
+footer {
+    text-align: center;
+    color: white;
+    background-color: #6899AE;
+    width: 100%;
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 20px;
+}
+
+.fa-angle-down {
+    color: white;
+}
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: white;
+}
+
+#intro {
+    width: 70%;
+    align-self: center;
+    text-align: center;
+    padding-top: 20px;
+    margin: 0;
+    padding-bottom: 10px;
+    font-family: "Muli", sans-serif;
+    font-size: 20px;
+}
+
+.form {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 70%;
+    padding: 0;
+    align-self: center;
+    flex-wrap: wrap;
+}
+
+.form-section {
+    width: 30%;
+}
+
+.basic-form {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+#type-of-services,
+#type-of-event {
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+#hear-about-us {
+    width: 100%;
+}
+
+label {
+    position: absolute;
+}
+
+.submit-btn {
+    color: #F2EFEF;
+    background-color: #6899AE;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    width: 100%;
+    margin-top: 1em;
+    border-style: none;
+    margin-bottom: 1em;
+}
+
+.submit-btn:hover {
+    background-color: #9A9500;
+}
+
+
+/* =====================================
 
 /* ============== ERRORS =============== */
-    /* ===================================== */
-    
-    .form-error {
-        display: none;
-        color: #ED5254;
-        font-size: 14px;
-        width: 100%;
-        margin-top: 0;
-    }
-    
-    .hidden {
-        display: none !important;
-    }
+
+
+/* ===================================== */
+
+.form-error {
+    display: none;
+    color: #ED5254;
+    font-size: 14px;
+    width: 100%;
+    margin-top: 0;
+}
+
+.hidden {
+    display: none !important;
+}
