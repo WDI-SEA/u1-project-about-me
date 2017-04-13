@@ -211,7 +211,7 @@ nav a:hover {
     align-items: center;
 }
 
-#quote {
+.quote {
     box-sizing: border-box;
     text-align: center;
     width: 70%;
@@ -254,7 +254,6 @@ nav a:hover {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    align-items: center;
     padding-left: 10%;
     padding-right: 10%;
     padding-bottom: 1em;
