@@ -1,17 +1,11 @@
-/*temporary styling - remove later*/
-
 section {
     min-height: 33em;
 }
-
-
-/*end of temporary styling here*/
 
 body {
     /*remove the default margins from the page*/
     /*to remove the white edges from the page*/
     margin: 0;
-    /*calculate the box sizing including the box*/
     box-sizing: border-box;
     font-family: 'Raleway', sans-serif;
 }
@@ -22,26 +16,23 @@ p {
 
 header {
     background-color: blue;
-}
-
-.navbar {
+    /*Hide the content behind the header*/
     overflow: hidden;
-    background-color: blue;
-    /* Set the navbar to fixed position */
+    /* Set the header to fixed position */
     position: fixed;
-    /* Position the navbar at the top of the page */
+    /* Position the header at the top of the page */
     top: 0;
     /* Full width */
     width: 100%;
 }
 
-img {
-    width: 25%;
+.navbar {
+    background-color: blue;
 }
 
 #about,
 #projects,
-#testamonials,
+#testimonials,
 #contactForm {
     /* Add top padding to avoid content overlay */
     padding-top: 6em;
@@ -55,7 +46,7 @@ img {
     background-color: white;
 }
 
-#testamonials {
+#testimonials {
     background-color: teal;
 }
 
@@ -72,6 +63,10 @@ footer {
     text-align: center;
 }
 
+img {
+    width: 25%;
+}
+
 .center img {
     display: block;
     margin-left: auto;
@@ -83,20 +78,44 @@ footer {
     margin-left: auto;
 }
 
+header > div {
+    width: 49%;
+    /*This sets both divs on one horizontal line*/
+    display: inline-block;
+    box-sizing: border-box;
+}
+
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
-li {
+h6 {
+    color: white;
+    font-size: 1.2em;
+    margin: 1.59em 0 1.59em 3em;
+}
+
+.navbar li {
+    /*This sets the 4 li on one horizontal line*/
     display: inline-block;
 }
 
-a {
+.menu li {
+    margin: 1em 3.5em;
+}
+
+.navbar a {
     text-decoration: none;
     color: white;
-    padding: .3em;
-    margin: .7em;
-    display: inline-block;
+    padding: .3em .2em;
+    margin: .7em 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: .3em .2em;
 }
 
 .active {
@@ -135,6 +154,7 @@ h5 {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .col-1-2 {
@@ -150,7 +170,7 @@ h5 {
     color: white;
 }
 
-#testamonials p {
+#testimonials p {
     color: white;
     width: 70%;
 }
@@ -201,4 +221,95 @@ footer p {
 
 .quotes {
     display: none;
+}
+
+
+/*Hamburger menu CSS*/
+
+.hamburgerIcons {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+.hamburger {
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 2em;
+    padding: .6em 1em 0 1em;
+    color: #fff;
+    border: 0;
+    font-size: 1.6em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+
+.cross {
+    display: none;
+    background: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 1em;
+    padding: .625em .5em 0px .5em;
+    color: #fff;
+    border: 0;
+    font-size: 3.2em;
+    font-weight: bold;
+    cursor: pointer;
+    outline: none;
+    z-index: 10000000000000;
+}
+
+
+/*Device width is > = 561px*/
+
+@media only screen and (min-width: 561px) {
+    #about {
+        background-color: gray;
+    }
+    .menu {
+        display: none !important;
+    }
+}
+
+
+/*Device width is < = 560px*/
+
+@media only screen and (max-width: 560px) {
+    #about {
+        background-color: pink;
+    }
+    .navbar {
+        display: none;
+    }
+    .hamburgerIcons {
+        display: block;
+    }
+    /*    .menu {
+        display: block;
+    }
+*/
+    img {
+        width: 80%;
+    }
+    h5 {
+        font-size: 1.25em;
+    }
+    h3 {
+        font-size: 2em;
+        padding: .5em 1em;
+    }
+    .col-1-2 {
+        width: 90%;
+    }
+    p {
+        font-size: 1.15em;
+    }
 }

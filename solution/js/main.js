@@ -1,5 +1,10 @@
 // function definitions
-
+function slideHamburgerMenuClosed() {
+    $(".menu").slideUp("slow", function() {
+        $(".cross").hide();
+        $(".hamburger").show();
+    });
+}
 
 // js executed once page has finished loading
 $(function() {
@@ -13,6 +18,7 @@ $(function() {
         $('html, body').animate({
             scrollTop: $($.attr(this, 'href')).offset().top
         }, 1000);
+        slideHamburgerMenuClosed();
     });
 
     // add highlighting menu item when scrolling to each section
@@ -30,6 +36,16 @@ $(function() {
             }
         });
     });
+
+    // Add the hamburger menu click event to show and hide the menu
+    $(".hamburger").on("click", function() {
+        $(".menu").slideDown("slow", function() {
+            $(".hamburger").hide();
+            $(".cross").show();
+        });
+    });
+
+    $(".cross").on("click", slideHamburgerMenuClosed);
 
     // Edit the form fields for blank values
     $(".submit").on("click", function(event) {
@@ -59,7 +75,5 @@ $(function() {
             .fadeOut(2000, showNextQuote);
     }
     showNextQuote();
-
-
 
 });
