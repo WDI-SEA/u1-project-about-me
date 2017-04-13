@@ -7,26 +7,25 @@ header {
     margin: 0 auto;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-h1 {
-    font-size: 2em;
+.headerPic {
+    background-image: url("images/checkRed.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
 }
 
 #headerNav {
-    width: 60%;
     margin: 2em auto;
     list-style: none;
+    justify-content: center;
 }
 
 .hamburger {
-    display: none;
+    font-size: 8em;
+    position: relative;
+    left: 200%;
+    color: #fff;
 }
 
 ul {
@@ -39,7 +38,7 @@ ul {
 }
 
 li a {
-    display: inline;
+    display: inline-block;
     color: #849fb0;
     font-weight: 800;
     font-size: 1.2em;
@@ -48,132 +47,106 @@ li a {
     margin: 0 2em;
 }
 
-header h1 {
-    color: #fff;
-    letter-spacing: 0.8em;
-    padding: 6em 0 0 0;
-}
-
-header h2 {
-    font-weight: 400;
-    color: #fff;
-    letter-spacing: 0.2em;
-    padding: 0 0 4em 0;
-}
-
-.headerPic {
-/*    background-image: url(images/headerBarRed.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    text-align: center;
-    width: 100%;
-*/
+.clearFix:after {
+    content: " ";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 
-/*.fromArchive {
-    width: 90%;
-    margin: 8em auto;
-}
+/*===about===*/
 
-.fromArchive h2 {
-    width: 100%;
-    font-weight: 400;
-    color: #3d4d58;
-    letter-spacing: 0.2em;
-    padding: 0 0 4em 0;
-    text-align: center;
-}
-*/
-
-
-/*article.backIssue {
-    display: inline-block;
-    text-align: center;
-}
-
-.col-1-3 {
-    width: 30%;
-}
-
-img.backIssue {
-    width: 100%;
-}
-
-h3.backIssue {
-    width: 100%;
-    font-weight: 400;
-    color: #3d4d58;
-    letter-spacing: 0.2em;
-    margin: 1em 0 2em 0;
-    text-align: center;
-}
-
-p.backIssue {
-    color: #3d4d58;
-    line-height: 3em;
-    font-family: "Raleway", sans-serif;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 3em;
-}
-
-a.backIssue {
-    color: #3d4d58;
-    background-color: white;
-    padding: 1em 2em;
-    border: 0.2em solid #3d4d58;
+h1,
+h2,
+h3,
+h4 {
     text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
+    font-weight: 400;
 }
 
-img.col-1-3 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
+header h1 {
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 0.2em;
+    padding: 0 0 4em 0;
 }
-*/
 
 .about {
-    background-color: #cff2f6;
-    width: 100%;
-    text-align: center;
+    text-align: left;
+    margin: 2% auto;
+    color: #3d4d58;
 }
 
-h2.about {
+.about h1 {
     font-weight: 400;
-    color: #3d4d58;
     letter-spacing: 0.2em;
-    padding: 3em 0 0 0;
+    margin: 1% 0;
     text-align: center;
 }
 
-p.about {
-    color: #3d4d58;
-    line-height: 2em;
-    font-family: "Raleway", sans-serif;
+.about p {
     width: 70%;
-    display: inline-block;
-    margin: 0 0 0.5em 0;
+    line-height: 200%;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 2%;
 }
 
 
-/*===form===*/
+/*===gallery===*/
+
+.gallery h1 {
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    margin: 1% 0;
+    text-align: center;
+}
+
+
+/*===quotes===*/
+
+.quotes {
+    text-align: left;
+    margin: 2% auto;
+    color: #3d4d58;
+}
+
+.quotes h1 {
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    margin: 1% 0;
+    text-align: center;
+    color: #3d4d58;
+}
+
+.quotes p {
+    width: 70%;
+    line-height: 200%;
+    font-family: "Raleway", sans-serif;
+    margin-bottom: 2%;
+    color: #3d4d58;
+}
+
+
+/*===contact===*/
 
 .contact {
     width: 100%;
     margin: 2em auto 4em;
+    color: #3d4d58;
 }
 
-.contact h2 {
-    margin: 0.5em auto;
-}
-
-#contactForm
- {
+#contactForm {
     width: 70%;
     margin: 0 auto;
+}
+
+.contact h1 {
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    margin: 1% 0;
+    text-align: center;
 }
 
 .contact {
@@ -181,6 +154,11 @@ p.about {
     margin: 0.5em 0;
     padding: 1em 0;
     text-align: center;
+}
+
+.threeBy1 {
+    display: flex;
+    justify-content: space-between;
 }
 
 .col-1-3 {
@@ -196,6 +174,7 @@ p.about {
 input {
     width: 100%;
     margin-top: 0.3em;
+    color: #3d4d58;
 }
 
 textarea {
@@ -220,442 +199,43 @@ textarea {
     width: 100%;
 }
 
+
+/*===footer===*/
+
 footer {
-    background-color: #cdf3f6;
-}
-
-.footSocial nav {
-    padding-top: 1em;
-    color: #44545e;
-}
-
-.footSocial nav a {
-    color: #44545e;
-    padding: 0 0.5em;
-    margin: 2%;
-}
-
-.footAuthor {
-    height: 4em;
-}
-
-
-/*====
-======
-======Old Code
-    body {
-    font-family: "Lato", sans-serif;
-}
-
-
-/*Header=================*/
-
-
-/*
-header {
-    width: 100%;
-    margin: 0 auto;
-}
-
-h1,
-h2,
-h3,
-h4 {
-    text-transform: uppercase;
-    font-weight: 400;
-}
-
-#headerNav {
-    width: 60%;
-    margin: 2em auto;
-    list-style: none;
+    background-color: #000;
+    color: #fff;
     display: flex;
 }
 
-.hamburger {
-    display: none;
+#icons {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2em;
+    padding: 1em;
 }
 
-ul {
-    justify-content: space-between;
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: .8em;
-}
-
-li a {
-    display: inline;
-    color: #849FB0;
-    font-weight: 800;
-    font-size: 1.2em;
-    letter-spacing: .2em;
+#icons a {
+    color: #fff;
     text-decoration: none;
 }
 
-header h1 {
-    font-weight: 400;
-    color: #fff;
-    letter-spacing: .8em;
-    padding: 4em 0 0 0;
-}
-
-header h2 {
-    font-weight: 400;
-    color: #fff;
-    letter-spacing: 0.2em;
-    padding: 0 0 4em 0;
-}
-
-.headerPic {
-    background-image: url(starter-code/images/home_header_bg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+#copy {
+    width: 50%;
     text-align: center;
-    width: 100%;
-}
-
-
-/*Main===================*/
-
-
-/*#main {
-}
-
-
-/*From the Archive=======*/
-
-
-/*
-.fromArchive {
-    width: 90%;
-    margin: 8em auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.fromArchive h2 {
-    width: 100%;
-    font-weight: 400;
-    color: #3D4D58;
-    letter-spacing: 0.2em;
-    padding: 0 0 4em 0;
-    text-align: center;
-}
-
-article.backIssue {
-    display: inline-block;
-    /*width: 30%;
-    text-align: center;
-}
-
-.col-1-3 {
-    width: 30%;
-}
-
-img.backIssue {
-    width: 100%;
-}
-
-h3.backIssue {
-    width: 100%;
-    font-weight: 400;
-    color: #3D4D58;
-    letter-spacing: 0.2em;
-    margin: 1em 0 2em 0;
-    text-align: center;
-}
-
-p.backIssue {
-    color: #3D4D58;
-    line-height: 3em;
-    font-family: "Raleway", sans-serif;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 3em;
-}
-
-a.backIssue {
-    color: #3D4D58;
-    background-color: white;
-    padding: 1em 2em;
-    border: .2em solid #3D4D58;
-    text-transform: uppercase;
-    text-decoration: none;
-    display: inline-block;
-}
-
-img.col-1-3 {
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-
-/*About the Mag==========*/
-
-
-/*.aboutMag {
-    background-color: #CFF2F6;
-    width: 100%;
-    /*padding: 0em 0 3em 0;
-    text-align: center;
-}
-
-h2.aboutMag {
-    font-weight: 400;
-    color: #3D4D58;
-    letter-spacing: 0.2em;
-    padding: 3em 0 0em 0;
-    text-align: center;
-}
-
-h3.aboutMag {
-    width: 100%;
-    font-weight: 400;
-    color: #3D4D58;
-    letter-spacing: 0.2em;
-    margin: 0 0 1em 0;
-    text-align: center;
-}
-
-p.aboutMag {
-    color: #3D4D58;
-    line-height: 2em;
-    font-family: "Raleway", sans-serif;
-    width: 70%;
-    display: inline-block;
-    margin: 0 0 .5em 0;
-}
-
-p.aboutMag2 {
-    color: #3D4D58;
-    line-height: 2em;
-    font-family: "Raleway", sans-serif;
-    width: 70%;
-    display: inline-block;
-    margin: 0 0 4em 0;
-}
-
-
-/*Issue Twenty===========*/
-
-
-/*==Cannot figure out technique for grid system.
-HELP!!==================*/
-
-
-/*
-.iss20 {
-    width: 70%;
-    margin: 1em auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-    text-align: center;
-}
-
-h2.issT {
-    width: 100%;
-    font-weight: 400;
-    color: #3D4D58;
-    letter-spacing: 0.2em;
-    padding: 1em 0 0em 0;
-    text-align: center;
-    margin: 1em auto 1em;
-}
-
-h3.issT {
-    width: 100%;
-    font-weight: 400;
-    color: #3D4D58;
-    letter-spacing: 0.2em;
-    margin: 0 0 2em 0;
-    text-align: center;
-}
-
-article.iss20 {
-    width: 30%;
-    display: inline-block;
-}
-
-img.iss20 {
-    width: 100%;
-}
-
-
-/*GetInTouch=============*/
-
-
-/*
-.getInTouch {
-    width: 100%;
-    margin: 2em auto 4em;
-}
-
-.getInTouch h2 {
-    margin: .5em auto;
-    align-content: center;
-}
-
-#getForm {
-    width: 70%;
-    margin: 0em auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.getHL {
-    width: 100%;
-    margin: .5em 0;
-    padding: 1em 0;
-    text-align: center;
-}
-
-.col-1-3 {
-    width: 30%;
-    margin-bottom: .5em;
-    padding: 1em 1em;
-    border: .2em solid #717D85;
-}
-
-.col-3-3 {
-    width: 100%;
-    background-color: white;
-}
-
-input {
-    width: 100%;
-    margin-top: .3em;
-}
-
-textarea {
-    width: 100%;
-}
-
-#submitButt:hover {
-    background-color: black;
-    color: white;
-}
-
-.error {
-    border: 2px solid #ED5254;
-}
-
-.errorMsg {
-    color: red;
     font-size: .7em;
-    margin: 0;
-    padding: 0;
-    display: none;
-    width: 100%;
+    margin: auto;
 }
 
 
-/*Footer=================*/
+/*MediaQuery===========*/
 
-
-/*footer {
-    background-color: #CDF3F6;
-}
-
-.footSocial nav {
-    padding-top: 1em;
-    color: #44545E;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footSocial nav a {
-    color: #44545E;
-    padding: 0 .5em;
-    margin: 2%;
-}
-
-.footForm {
-    display: flex;
-    margin: 0em 5em 2em;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.footForm input {
-    margin: 1em;
-}
-
-#footEMAIL {
-    background-color: #fff;
-    padding: 1em 3em;
-    border-color: #fff;
-    text-align: center;
-    border-style: none;
-}
-
-#footSubscribe {
-    background-color: #CDF3F6;
-    padding: 1em 2em;
-    border: .2em solid #717D85;
-    border-style: none;
-}
-
-.footAuthor {
-    height: 4em;
-    border-top: solid 0.2em #849fb0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-
-/*MediaQuery=======================
-Still cannot get @media to work!!!!!
-==================================*/
-
-
-/*@media (max-width: 560px) {
-    #wrapper {
-        /*background-color: red;
-*/
-
-
-}
-
-/*Header=================*/
-
-/*Main===================*/
-
-/*From the Archive=======*/
-
-/*About the Mag==========*/
-
-/*Issue Twenty===========*/
-
-/*GetInTouch=============*/
-
-/*Footer=================*/
-
-/*    .hamburger {
-        display: block;
-        color: #fff;
-        font-size: 2em;
-        position: absolute;
-        top: 1em;
-        left: 1em;
+@media (max-width: 560px) {
+    .hamburger {
+        font-size: 4em;
+        position: fixed;
+        left: 0;
+        color: #000;
     }
-    #headerNav {
-        display: none;
-    }
-    .col-1-3 {
-        width: 100%;
-    }
-    article.iss20 {
-        width: 48%;
-        display: inline-block;
-        }
-
-*/
+}
