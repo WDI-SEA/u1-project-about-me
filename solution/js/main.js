@@ -1,10 +1,6 @@
 // function definitions
 
 
-
-
-
-
 // js executed once page has finished loading
 $(function() {
     console.log("jQuery loaded");
@@ -28,14 +24,29 @@ $(function() {
         $(".section").each(function() {
             var target = $(this).offset().top;
             var id = $(this).attr("id");
-
             if (position + offset >= target) {
                 $("#navigation > ul > li > a").removeClass("active");
                 $("#navigation > ul > li > a[href='#" + id + "']").addClass("active");
             }
-
         });
     });
+
+    // Edit the form fields for blank values
+    $(".submit").on("click", function(event) {
+        event.preventDefault();
+        $(".edited-element").each(function() {
+            if ($(this).val()) {
+                // value is non-blank
+                $(this).removeClass("error");
+                $(this).siblings().hide();
+            } else {
+                // value is blank
+                $(this).addClass("error");
+                $(this).siblings().fadeIn(1000);
+            }
+        });
+    });
+
     // Fade in & out text loop - jQuery
     var quotes = $(".quotes");
     var quoteIndex = -1;

@@ -1,7 +1,7 @@
 /*temporary styling - remove later*/
 
 section {
-    min-height: 34em;
+    min-height: 33em;
 }
 
 
@@ -141,6 +141,11 @@ h5 {
     width: 40%;
 }
 
+.col-1-1 {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 #about p {
     color: white;
 }
@@ -148,6 +153,50 @@ h5 {
 #testamonials p {
     color: white;
     width: 70%;
+}
+
+form p {
+    display: none;
+    margin-top: .1em;
+}
+
+form {
+    width: 80%
+}
+
+.email,
+.full-name,
+.subject {
+    color: #777;
+    padding: .4em 1em;
+    margin: 0 0 .7em;
+    height: 2.5em;
+    border: 1px solid #777;
+}
+
+.message {
+    color: #777;
+    padding: 1em;
+    height: 8em;
+    border: 1px solid #777;
+}
+
+.submit {
+    color: #777;
+    background-color: transparent;
+    padding: .3em;
+    margin: .5em 0 5em 0;
+    height: 2.5em;
+    border: 1px solid #777;
+}
+
+.error {
+    border: 2px solid #ED5254;
+}
+
+footer p {
+    color: white;
+    padding: 1.4em;
 }
 
 .quotes {
