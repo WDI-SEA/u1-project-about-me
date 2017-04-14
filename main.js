@@ -1,31 +1,39 @@
 $(function() {
-
-    $("#submitButt").on("click", function() {
-
-        var formFields = ($(".blank"));
-        var formError = ($(".errorMsg"));
-
+    //nav anchors
+    $('a').on('click', function(event) {
         event.preventDefault();
-
-        for (var i = 0; i < formFields.length; i++) {
-            if (!formFields[i].value) {
-                $(formFields[i]).addClass("error");
-                $(formError[i]).show();
-            }
-        }
+        var target = $(this.hash);
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1200);
+        return false;
     });
 
-    $(".blank").on("keydown", function() {
+    //contactForm
+    var inputBox = $('.inputBox');
 
-        var formFields = ($(".blank"));
-        var formError = ($(".errorMsg"));
+    $('#submitButt').on('click', clear);
 
-        for (var i = 0; i < formFields.length; i++) {
-            if (formFields[i].value) {
-                $(formFields[i]).removeClass("error");
-                $(formError[i]).hide();
+    function checkForm() {
+        for (var i = 0; i < inputBox.length; i++) {
+            if (!inputBox[i].value) {
+                $(inputBox[i]).addClass('error');
+                $(inputBox[i]).siblings().show();
             }
         }
-    });
+    }
+
+    function clear(event) {
+        event.preventDefault();
+        for (var i = 0; i < inputBox.length; i++) {
+            $(inputBox[i]).removeClass('error');
+            $('.errorMsg').hide();
+            checkForm();
+        }
+    }
+    //highlight nav <a>'s
+    $('section').mouseenter(function() { $('nav a[href="#' + $(this).attr('id') + '"]').addClass('active'); });
+    $('section').mouseleave(function() { $('nav a[href="#' + $(this).attr('id') + '"]').removeClass('active'); });
+    //end of JS
 
 });

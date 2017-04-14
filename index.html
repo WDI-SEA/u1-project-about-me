@@ -18,10 +18,10 @@
         </div>
         <div class="navULMargin">
             <ul id="navUL">
-                <li><a href="#aboutId">About</a></li>
-                <li><a href="#galleryId">Gallery</a></li>
-                <li><a href="#quotesId">Quotes</a></li>
-                <li><a href="#contactForm">Contact</a></li>
+                <li><a href="#aboutSection">About</a></li>
+                <li><a href="#gallerySection">Gallery</a></li>
+                <li><a href="#quotesSection">Quotes</a></li>
+                <li><a href="#formSection">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -30,68 +30,76 @@
 <div id="main">
     <!--About-->
     <div id="aboutId"></div>
-    <div class="about">
-        <h1 class="about">About</h2>
-            <p class="about">Shawn Adams leads Buffalo Check, an independent marketing consultancy with strategic and tactical expertise across digital media. We plan and execute customized programs that work with existing initiatives to achieve immediate goals as well as contributing to future successes. We maximize client ROI by partnering directly with leading platforms and leveraging the relationships between data, people and their devices.
-                <br>
-                <br>The Buffalo Check team and has been developing customized multi-device programs for F500 companies, the US military and their agencies on behalf of NBC, NFL, NCAA properties and others for over 15 years.</p>
-        </div>
-        <div class="clearFix"></div>
-        <!--gallery-->
-        <div id="galleryId">
+    <section id="aboutSection" class="about">
+        <h1 class="about">About</h1>
+        <p class="about">Shawn Adams leads Buffalo Check, an independent marketing consultancy with strategic and tactical expertise across digital media. We plan and execute customized programs that work with existing initiatives to achieve immediate goals as well as contributing to future successes. We maximize client ROI by partnering directly with leading platforms and leveraging the relationships between data, people and their devices.
+            <br>
+            <br>The Buffalo Check team and has been developing customized multi-device programs for F500 companies, the US military and their agencies on behalf of NBC, NFL, NCAA properties and others for over 15 years.</p>
+    </section>
+    <div class="clearFix"></div>
+    <!--gallery-->
+    <div id="galleryId"></div>
+    <section id="gallerySection">
         <div class="gallery">
-            <h1 class="gallery">Gallery</h2>
+            <h1 class="gallery">Gallery</h1>
             <div id="imagebox">
-            <img src="images/beerLogoAB.png" alt="Beer Logo" class="gallery">
-            <img src="images/beerLogoOkt.png" alt="Oktoberfet" class="gallery">
-            <img src="images/beerLogoESB.png" alt="ESB Logo" class="gallery">
+                <img src="images/beerLogoAB.png" alt="Beer Logo" class="gallery">
+                <img src="images/beerLogoOkt.png" alt="Oktoberfet" class="gallery">
+                <img src="images/beerLogoESB.png" alt="ESB Logo" class="gallery">
             </div>
         </div>
-        <div class="clearFix"></div>
-        <!--quotes-->
-        <div id="quotesId"></div>
-        <div class="quotes">
-            <h1 class="quotes">Quotes</h2>
-            <p class="quotes">Here is a quote about how much I enjoy Shawn's work and presence. He's a fun person who showers regularly.<br>&mdash; Alan B.</p>
-            <p class="quotes">This is a another quote about how much I enjoy working with Shawn. He likes beer, has a good sense of humor and seems to shower regularly.<br>&mdash; Betty C.</p>
-            <p class="quotes">This is a third quote. Shawn looks at the bright side even when CSS and Javascript are not fun.<br>&mdash; Charles D.</p>
-        </div>
-        <div class="clearFix"></div>
-        <!--form-->
+    </section>
+    <div class="clearFix"></div>
+    <!--quotes-->
+    <div id="quotesId"></div>
+    <section id="quotesSection">
+        <h1> Quotes</h1>
+        <p>Here is a quote about how much I enjoy Shawn's work and presence. He's a fun person who showers regularly.
+            <br>&mdash; Alan B.</p>
+        <p>This is a another quote about how much I enjoy working with Shawn. He likes beer, has a good sense of humor and seems to shower regularly.
+            <br>&mdash; Betty C.</p>
+        <p>This is a third quote. Shawn looks at the bright side even when CSS and Javascript are not fun.
+            <br>&mdash; Charles D.</p>
+    </section>
+    <div class="clearFix"></div>
+    <!--form-->
     <div id="contactId"></div>
-    <div class="contact">
-    <form id="contactForm">
-        <h1 class="contact">Contact</h2>
-        <div class="threeBy1">
-        <div class="col-1-3">
-            <input type="text" placeholder="NAME">
-            <p class="errorMsg">Please enter your full name.</p>
+    <section id="formSection">
+        <div class="contact">
+            <form id="contactForm">
+                <h1 class="contact">Contact</h1>
+                <div class="threeBy1">
+                    <div class="col-1-3">
+                        <input type="text" class="inputBox" placeholder="NAME">
+                        <p class="errorMsg hidden">Please enter your full name.</p>
+                    </div>
+                    <div class="col-1-3">
+                        <input type="e-mail" class="inputBox" placeholder="EMAIL">
+                        <p class="errorMsg hidden">Please enter your e-mail.</p>
+                    </div>
+                    <div class="col-1-3">
+                        <input type="text" class="inputBox" placeholder="SUBJECT">
+                        <p class="errorMsg hidden">Please enter a subject.</p>
+                    </div>
+                </div>
+                <div class="col-3-3">
+                    <textarea rows="5" class="inputBox" placeholder="COMMENT"></textarea>
+                    <p class="errorMsg hidden">Please enter a message.</p>
+                    <input type="submit" id="submitButt" value="SUBMIT">
+                </div>
+            </form>
         </div>
-        <div class="col-1-3">
-            <input type="text" placeholder="EMAIL">
-            <p class="errorMsg">Please enter your e-mail.</p>
+    </section>
+    <div class="clearFix"></div>
+    <!---footer-->
+    <footer>
+        <div id="icons">
+            <a href="https://www.facebook.com/shawn.adams.98434" class="foot"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/shawnadamsbuffalocheck" class="foot"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
         </div>
-        <div class="col-1-3">
-            <input type="text" placeholder="SUBJECT">
-            <p class="errorMsg">Please enter a subject.</p>
+        <div id="copy">
+            <p class="copyright">&copy; 2017 Shawn Adams</p>
         </div>
-        </div>
-        <div class="col-3-3">
-            <textarea rows="5" placeholder="COMMENT"></textarea>
-            <p class="errorMsg">Please enter a message.</p>
-            <input type="submit" id="submitButt" value="SUBMIT">
-        </div>
-    </form>
-</div>
-<div class="clearFix"></div>
-<!---footer-->
-<footer>
-<div id="icons">
-    <a href="https://www.facebook.com/shawn.adams.98434" class="foot"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-    <a href="https://www.linkedin.com/in/shawnadamsbuffalocheck" class="foot"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
-</div>
-<div id="copy">
-        <p class="copyright">&copy; 2017 Shawn Adams</p>
-</div>
-</footer>
-</html>
+    </footer>
+
+    </html>

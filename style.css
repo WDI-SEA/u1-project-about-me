@@ -5,6 +5,10 @@ body {
     background-color: #f0f3f5;
 }
 
+.hidden {
+    display: none;
+}
+
 nav {
     position: fixed;
     top: 0;
@@ -104,15 +108,15 @@ h4 {
     color: #3d4d58;
 }
 
-#aboutId {
+/*#aboutId {
     padding-top: 150px;
     margin-top: -150px;
 }
+*/
 
-
-/*.about {
-    width: 70%;
-}*/
+.about {
+    width: 80%;
+}
 
 .about h1 {
     font-weight: 400;
@@ -123,7 +127,8 @@ h4 {
 }
 
 .about p {
-    width: 70%;
+    /*width: 70%;
+*/
     line-height: 200%;
     font-family: /*"Raleway",
 */
@@ -147,10 +152,10 @@ hr {
 
 /*===gallery===*/
 
-#galleryId {
+/*#galleryId {
     padding-top: 150px;
     margin-top: -150px;
-}
+}*/
 
 
 /*.gallery {
@@ -177,19 +182,19 @@ hr {
 
 /*===quotes===*/
 
-#quotesId {
-    /*height: 10em;*/
+/*#quotesId {
     padding-top: 150px;
     margin-top: -150px;
-}
+}*/
 
-.quotes {
-    text-align: left;
+#quotesSection {
+    width: 60%;
+    /*    text-align: left;*/
     margin: 5% auto;
     color: #3d4d58;
 }
 
-.quotes h1 {
+#quotesSection h1 {
     font-weight: 400;
     font-size: 1.5em;
     letter-spacing: 0.2em;
@@ -198,12 +203,14 @@ hr {
     color: #3d4d58;
 }
 
-.quotes p {
-    width: 50%;
+#quotesSection p {
+    /*width: 50%;
+*/
     line-height: 200%;
     font-family: sans-serif;
     margin-bottom: 2%;
     color: #3d4d58;
+    text-align: left;
 }
 
 
@@ -288,7 +295,7 @@ textarea {
 }
 
 .error {
-    border: 2px solid #ed5254;
+    border: 2px solid #green;
 }
 
 .errorMsg {
@@ -296,7 +303,8 @@ textarea {
     font-size: 0.7em;
     margin: 0;
     padding: 0;
-    display: none;
+    /*display: none;
+*/
     width: 100%;
 }
 
