@@ -3,42 +3,52 @@ body {
 */
     sans-serif;
     background-color: #f0f3f5;
-    /*background-color: #ccffb3;*/
 }
 
-header {
+nav {
+    position: fixed;
+    top: 0;
     width: 100%;
-    margin: 0 auto;
+    z-index: 100;
 }
 
-.headerPic {
+.checkBar {
     background-image: url("images/checkRed.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
-}
-
-#headerNav {
-    margin: 2em auto;
-    list-style: none;
-    justify-content: center;
+    height: 110px;
+    /*    position: fixed;*/
 }
 
 .hamburger {
-    font-size: 8em;
-    position: relative;
-    left: 200%;
+    font-size: 6em;
+    display: none;
     color: #fff;
+}
+
+.navULMargin {
+    width: 100%;
+    height: 42px;
+    background-color: #f0f3f5;
+}
+
+#navUL {
+    list-style: none;
+    justify-content: center;
+    padding-top: 1.5em;
+    background-color: #f0f3f5;
+    display: flex;
+    width: 60%;
+    margin: auto;
+    justify-content: space-between;
 }
 
 ul {
     font-weight: 600;
-    /*    text-transform: uppercase;
-*/
     font-size: 0.8em;
     display: flex;
-    margin-bottom: 2em;
 }
 
 li a {
@@ -48,18 +58,21 @@ li a {
     font-size: 1.2em;
     letter-spacing: 0.2em;
     text-decoration: none;
-    margin: 0 2em;
 }
 
 li a:hover {
-    /*display: inline-block;*/
+    display: inline-block;
     color: #B2252B;
-    font-weight: 600;
-    /*font-size: 1.2em;*/
-    letter-spacing: 0em;
+    font-weight: 800;
+    font-size: 1.3em;
+    letter-spacing: 0.2em;
     text-decoration: none;
-    margin: 0 2em;
-    text-transform: uppercase;
+    /*    margin: 0 2em;*/
+    /*text-transform: uppercase;*/
+}
+
+li a.active {
+    color: #B2252B;
 }
 
 .clearFix:after {
@@ -73,6 +86,10 @@ li a:hover {
 
 /*===about===*/
 
+#main {
+    margin-top: 150px;
+}
+
 h1,
 h2,
 h3,
@@ -81,54 +98,65 @@ h4 {
     font-weight: 400;
 }
 
-header h1 {
-    font-weight: 400;
-    color: #fff;
-    letter-spacing: 0.2em;
-    padding: 0 0 4em 0;
-}
-
 .about,
+.gallery,
 .quotes,
 .contact {
     text-align: left;
-    margin: 5% auto;
+    margin: 0 auto;
     color: #3d4d58;
+}
+
+#aboutId {
+    padding-top: 150px;
+    margin-top: -150px;
 }
 
 .about h1 {
     font-weight: 400;
     font-size: 1.5em;
     letter-spacing: 0.2em;
-    margin: 1% 0;
+    margin: 5% auto;
     text-align: center;
 }
 
 .about p {
     width: 70%;
     line-height: 200%;
-    font-family: "Raleway", sans-serif;
+    font-family: /*"Raleway",
+*/
+    sans-serif;
     margin-bottom: 2%;
 }
 
 
 /*===hr===*/
 
+
+/*
 hr {
     width: 60%;
     height: 3px;
     background-color: #1f282d;
     margin: 0 auto 5%;
     border-style: none;
-}
+}*/
 
 
 /*===gallery===*/
 
-#gallery {
-    width: 70%;
-    margin: 5% auto;
+#galleryId {
+    /*height: 10em;*/
+    padding-top: 150px;
+    margin-top: -150px;
 }
+
+
+/*.gallery {
+    width: 70%;
+    margin: 30% auto 5%;
+}
+*/
 
 .gallery h1 {
     font-weight: 400;
@@ -148,6 +176,12 @@ hr {
 
 /*===quotes===*/
 
+#quotesId {
+    /*height: 10em;*/
+    padding-top: 150px;
+    margin-top: -150px;
+}
+
 .quotes {
     text-align: left;
     margin: 5% auto;
@@ -158,7 +192,7 @@ hr {
     font-weight: 400;
     font-size: 1.5em;
     letter-spacing: 0.2em;
-    margin: 1% 0;
+    margin: 5% auto;
     text-align: center;
     color: #3d4d58;
 }
@@ -166,7 +200,7 @@ hr {
 .quotes p {
     width: 70%;
     line-height: 200%;
-    font-family: "Raleway", sans-serif;
+    font-family: sans-serif;
     margin-bottom: 2%;
     color: #3d4d58;
 }
@@ -217,7 +251,7 @@ input {
     border: 1px solid transparent;
     box-sizing: border-box;
     overflow: auto;
-    /*border was: #495d69;*/
+    padding: 0 0 0 1em;
 }
 
 textarea {
@@ -228,13 +262,23 @@ textarea {
     box-sizing: border-box;
     resize: none;
     overflow: auto;
+    padding: 1em 0 0 1em;
+}
+
+#submitButt {
+    background-color: #849fb0;
+    color: #c3ced5;
+    border-style: none;
+    border: 1px solid transparent;
+    padding: 1em 0;
 }
 
 #submitButt:hover {
     background-color: #495d69;
     color: white;
     border-style: none;
-    order: 1px solid #495d69;
+    border: 1px solid #495d69;
+    padding: 1em 0;
 }
 
 .error {
@@ -242,7 +286,7 @@ textarea {
 }
 
 .errorMsg {
-    color: red;
+    color: green;
     font-size: 0.7em;
     margin: 0;
     padding: 0;
@@ -289,29 +333,84 @@ footer {
 
 @media (max-width: 560px) {
     .hamburger {
-        font-size: 3em;
+        font-size: 4em;
         position: fixed;
-        left: .5em;
-        color: #495d69;
+        display: block;
+        left: .3em;
+        top: 0.4em;
+        color: #fff;
+    }
+    #navUL {
+        margin: 0 0 0 0;
+        padding: 0 0 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 22%;
+        background-color: white;
+    }
+    .navULMargin {
+        background-color: transparent;
+    }
+    li {
+        margin: .5em 0;
+        padding: .4em 0;
+        width: 100%;
+        background-color: transparent;
     }
     li a {
-        display: block;
-        color: #849fb0;
-        font-weight: 400;
-        font-size: 1.6em;
-        letter-spacing: 0.2em;
-        text-decoration: none;
-        margin: 0 2em;
+        color: #1f282d;
     }
     li a:hover {
-        /*display: inline-block;*/
+        display: inline-block;
         color: #B2252B;
         font-weight: 600;
-        /*font-size: 1.2em;*/
         letter-spacing: 0em;
         text-decoration: none;
-        margin: 0 2em;
         text-transform: uppercase;
     }
+    .threeBy1 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .col-1-3 {
+        width: 100%;
+        margin-bottom: .6em;
+    }
+    input {
+        width: 100%;
+        margin: 2% 0;
+        padding-left: 1em;
+        border-style: none;
+        border: 1px solid transparent;
+        box-sizing: border-box;
+        overflow: auto;
+        /*border was: #495d69;*/
+    }
+    textarea {
+        width: 100%;
+        border-style: none;
+        border: 1px solid transparent;
+        margin: .3em 0;
+        box-sizing: border-box;
+        resize: none;
+        overflow: auto;
+        padding: 1em 0 0 1em;
+    }
+    #submitButt {
+        /*background-color: #495d69;
+    color: white;
+    border-style: none;
+    order: 1px solid #495d69;*/
+        padding: .6em 0;
+    }
+    #submitButt:hover {
+        /*background-color: #495d69;
+    color: white;
+    border-style: none;
+    order: 1px solid #495d69;*/
+        padding: .6em 0;
+    }
     /*===End of MediaQuery===*/
+    /*===Do not Erase curly brace below===*/
 }
