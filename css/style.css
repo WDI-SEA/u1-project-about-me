@@ -33,7 +33,7 @@ section {
 #about,
 #projects,
 #testimonials,
-#contactForm {
+#contact-form {
     /* Add top padding to avoid content overlay */
     padding-top: 6em;
 }
@@ -50,7 +50,7 @@ section {
     background-color: teal;
 }
 
-#contactForm {
+#contact-form {
     background-color: white;
 }
 
@@ -73,7 +73,7 @@ img {
     margin-right: auto;
 }
 
-.centerBlock {
+.center-block {
     margin-right: auto;
     margin-left: auto;
 }
@@ -142,7 +142,7 @@ h3 {
 }
 
 #projects h3,
-#contactForm h3 {
+#contact-form h3 {
     color: black;
     border-bottom: 3px solid black;
 }
@@ -151,7 +151,7 @@ h5 {
     color: white;
 }
 
-.flexContainer {
+.flex-container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -209,6 +209,13 @@ form {
     margin: .5em 0 5em 0;
     height: 2.5em;
     border: 1px solid #777;
+    -webkit-transition: color 1s ease-out, background-color 1s ease-out;
+    transition: color 1s ease-out, background-color 1s ease-out;
+}
+
+.submit:hover {
+    color: white;
+    background-color: #777;
 }
 
 .error {
@@ -227,7 +234,7 @@ footer p {
 
 /*Hamburger menu CSS*/
 
-.hamburgerIcons {
+.hamburger-icons {
     display: none;
 }
 
@@ -292,13 +299,9 @@ footer p {
     .navbar {
         display: none;
     }
-    .hamburgerIcons {
+    .hamburger-icons {
         display: block;
     }
-    /*    .menu {
-        display: block;
-    }
-*/
     img {
         width: 80%;
     }

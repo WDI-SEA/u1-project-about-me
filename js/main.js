@@ -8,9 +8,6 @@ function slideHamburgerMenuClosed() {
 
 // js executed once page has finished loading
 $(function() {
-    console.log("jQuery loaded");
-    // debugger;
-
     // add smooth scrolling to the nav's anchors
     $("nav").on('click', 'a', function(event) {
         event.preventDefault();
