@@ -164,9 +164,8 @@ header a:hover {
     border-radius: 80%;
     padding: 25px;
     width: 300px;
-    margin: auto;
-    display: block;
-    border: 25px solid white;
+    margin-left: 60px;
+    border: 10px solid white;
 }
 
 img {
