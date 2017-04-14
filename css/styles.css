@@ -449,6 +449,28 @@ label {
     margin-top: 1em;
 }
 
+#view-large {
+    background: rgba(0, 0, 0, .8);
+}
+
+#view-large.fullscreen {
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#view-large img {
+    max-width: 900px;
+    max-height: 900px;
+}
+
 
 /* ===================================== */
 

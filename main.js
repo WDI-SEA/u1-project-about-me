@@ -53,7 +53,24 @@ $(function() {
 
     // GALLERY
 
+    $(".galleryimg").on("click", function(event) {
+        event.preventDefault();
 
+        var imgId = $(this).attr("src");
+
+
+        $("#view-large").removeClass("hidden").toggleClass("fullscreen");
+        $(".view-large-pic").attr("src", imgId);
+        $("html, body").css("overflow", "hidden");
+    });
+
+    $("#view-large").on("click", function() {
+        var imgId = $(this).attr("src");
+
+        $("#view-large").addClass("hidden");
+        $(".view-large-pic").removeAttr("src", imgId);
+        $("html, body").css("overflow", "visible");
+    });
 
     // CONTACT FORM SHOW
     // when click arrow-down, contact form slides up from bottom
