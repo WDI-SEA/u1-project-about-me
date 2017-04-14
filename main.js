@@ -59,16 +59,14 @@ $(function() {
         var imgId = $(this).attr("src");
 
 
-        $("#view-large").removeClass("hidden").toggleClass("fullscreen");
+        $("#view-large").removeClass("hidden");
         $(".view-large-pic").attr("src", imgId);
         $("html, body").css("overflow", "hidden");
     });
 
     $("#view-large").on("click", function() {
-        var imgId = $(this).attr("src");
 
         $("#view-large").addClass("hidden");
-        $(".view-large-pic").removeAttr("src", imgId);
         $("html, body").css("overflow", "visible");
     });
 
