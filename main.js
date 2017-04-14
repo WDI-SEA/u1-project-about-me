@@ -25,32 +25,35 @@ $(function() {
     // testimonials
     // three quotes - each as a div
     // after 15 seconds - switch to next div
+    // var newQuote = $(".quote");
+    // var quoteLength = newQuote.length;
+    // var counter = 0;
 
-    var newQuote = $(".quote");
-    var quoteLength = newQuote.length;
-    var counter = 0;
+    // newQuote.hide();
+    // setTimeout(function() {
+    //     startIteration(counter);
+    // }, 1000);
 
-    newQuote.hide();
-    setTimeout(function() {
-        startIteration(counter);
-    }, 1000);
+    // function startIteration(counter) {
+    //     newQuote.eq(counter).fadeIn('slow', function() {
+    //         if (counter <= quoteLength) {
+    //             setTimeout(function() {
+    //                 newQuote.fadeOut('slow', function() {
+    //                     if (counter == quoteLength) {
+    //                         counter = 0;
+    //                     } else {
+    //                         counter++;
+    //                     }
+    //                     setTimeout(function() { startIteration(counter); }, 1000);
+    //                 });
+    //             }, 2000);
+    //         }
+    //     });
+    // }
 
-    function startIteration(counter) {
-        newQuote.eq(counter).fadeIn('slow', function() {
-            if (counter <= quoteLength) {
-                setTimeout(function() {
-                    newQuote.fadeOut('slow', function() {
-                        if (counter == quoteLength) {
-                            counter = 0;
-                        } else {
-                            counter++;
-                        }
-                        setTimeout(function() { startIteration(counter); }, 1000);
-                    });
-                }, 2000);
-            }
-        });
-    }
+    // GALLERY
+
+
 
     // CONTACT FORM SHOW
     // when click arrow-down, contact form slides up from bottom
