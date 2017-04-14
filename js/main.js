@@ -31,8 +31,8 @@ $(function() {
             var target = $(this).offset().top;
             var id = $(this).attr("id");
             if (position + offset >= target) {
-                $("#navigation > ul > li > a").removeClass("active");
-                $("#navigation > ul > li > a[href='#" + id + "']").addClass("active");
+                $(".navigation > ul > li > a").removeClass("active");
+                $(".navigation > ul > li > a[href='#" + id + "']").addClass("active");
             }
         });
     });
@@ -75,5 +75,4 @@ $(function() {
             .fadeOut(2000, showNextQuote);
     }
     showNextQuote();
-
 });

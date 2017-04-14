@@ -1,7 +1,3 @@
-section {
-    min-height: 33em;
-}
-
 body {
     /*remove the default margins from the page*/
     /*to remove the white edges from the page*/
@@ -24,6 +20,10 @@ header {
     top: 0;
     /* Full width */
     width: 100%;
+}
+
+section {
+    min-height: 33em;
 }
 
 .navbar {
@@ -105,17 +105,18 @@ h6 {
     margin: 1em 3.5em;
 }
 
-.navbar a {
+a {
     text-decoration: none;
     color: white;
     padding: .3em .2em;
+    /*Margin doesn't apply to inline .menu anchors*/
     margin: .7em 0;
+    -webkit-transition: color 1s ease-out;
+    transition: color 1s ease-out;
 }
 
-.menu a {
-    text-decoration: none;
-    color: white;
-    padding: .3em .2em;
+a:hover {
+    color: magenta;
 }
 
 .active {
@@ -271,10 +272,12 @@ footer p {
 /*Device width is > = 561px*/
 
 @media only screen and (min-width: 561px) {
-    #about {
-        background-color: gray;
+    /*    #about {
+        background-color: cyan;
     }
+*/
     .menu {
+        /*This hides the hamburger menu when user resizes the screen.*/
         display: none !important;
     }
 }
