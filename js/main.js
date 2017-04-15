@@ -34,13 +34,30 @@ $(function() {
             }
         });
     });
-    // Initialize the Slick carousel slider
+
+    // Initialize the Slick slider carousel
     $(".autoplay").slick({
         dots: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 4000,
+        speed: 800,
+        arrows: false,
+        pauseOnDotsHover: true
+    });
+
+    // Make equal height slides from different height images
+    // Set each '.slick-slide' to have the height of the '.slick-track' on page load
+    var slickTrackHeight = $('.slick-track').height();
+    $('.slick-slide').css('height', slickTrackHeight + 'px');
+
+    // Set each '.slick-slide' to have the height of the '.slick-track' on slider resizing
+    $('.autoplay').on('setPosition', function() {
+        $(this).find('.slick-slide').height('auto');
+        var slickTrack = $(this).find('.slick-track');
+        var slickTrackHeight = $(slickTrack).height();
+        $(this).find('.slick-slide').css('height', slickTrackHeight + 'px');
     });
 
     // Add the hamburger menu click event to show and hide the menu

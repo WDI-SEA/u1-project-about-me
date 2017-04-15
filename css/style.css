@@ -20,6 +20,8 @@ header {
     top: 0;
     /* Full width */
     width: 100%;
+    /*Position the header in front of project images and dots*/
+    z-index: 1000000000;
 }
 
 section {
@@ -63,7 +65,7 @@ footer {
     text-align: center;
 }
 
-img {
+#about img {
     width: 25%;
 }
 
@@ -276,11 +278,12 @@ footer p {
 }
 
 
-/*Slick slide carousel CSS*/
+/*Slick slider carousel CSS*/
 
 .container {
     margin: 0 auto;
-    padding: 40px;
+    margin-bottom: 2em;
+    padding: 3%;
     width: 80%;
     color: #333;
     background: #419be0;
@@ -292,13 +295,27 @@ footer p {
     background: white;
 }
 
+#projects img {
+    /*Set the image to fill 100% of the slide width*/
+    width: 100%;
+    /*Size the image to cover its content box, cropping the image sides as needed*/
+    object-fit: cover;
+}
+
+
+/*Override the font-size of the slick-dots to make them larger*/
+
+.slick-dots li button:before {
+    font-size: 14px;
+}
+
 
 /*Device width is > = 561px*/
 
 @media only screen and (min-width: 561px) {
     /*    #about {
-        background-color: cyan;
-    }
+    background-color: cyan;
+}
 */
     .menu {
         /*This hides the hamburger menu when user resizes the screen.*/
