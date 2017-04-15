@@ -108,11 +108,10 @@ h4 {
     color: #3d4d58;
 }
 
-/*#aboutId {
+#aboutId {
     padding-top: 150px;
     margin-top: -150px;
 }
-*/
 
 .about {
     width: 80%;
@@ -152,19 +151,7 @@ hr {
 
 /*===gallery===*/
 
-/*#galleryId {
-    padding-top: 150px;
-    margin-top: -150px;
-}*/
-
-
-/*.gallery {
-    width: 70%;
-    margin: 30% auto 5%;
-}
-*/
-
-.gallery h1 {
+#gallerySection h1 {
     font-weight: 400;
     font-size: 1.5em;
     letter-spacing: 0.2em;
@@ -174,13 +161,25 @@ hr {
     color: #3d4d58;
 }
 
-#imagebox img {
-    display: block;
-    margin: 3% auto;
+.container {
+    margin: 0 auto;
+    /*padding: 40px;
+*/
+    width: 100%;
+    color: #333;
+    background: #1f282d;
+}
+
+.single-item {
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0 auto;
+    padding: 5% 0;
 }
 
 
 /*===quotes===*/
+
 
 /*#quotesId {
     padding-top: 150px;
@@ -216,22 +215,17 @@ hr {
 
 /*===contact===*/
 
-#contactId {
-    padding-top: 150px;
-    margin-top: -150px;
+#contactForm {
+    width: 80%;
+    margin: 0 auto;
 }
 
-.contact {
+.contact div {
     width: 100%;
     margin: 0.5em 0;
     padding: 1em 0;
     text-align: center;
     color: #3d4d58;
-}
-
-#contactForm {
-    width: 70%;
-    margin: 0 auto 5%;
 }
 
 .contact h1 {
@@ -303,8 +297,6 @@ textarea {
     font-size: 0.7em;
     margin: 0;
     padding: 0;
-    /*display: none;
-*/
     width: 100%;
 }
 

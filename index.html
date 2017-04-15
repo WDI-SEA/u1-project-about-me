@@ -4,11 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Lato|Raleway:400,800" rel="stylesheet">
-    <title>Monument</title>
+    <title>About Shawn</title>
     <link rel="stylesheet" type="text/css" href="normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Slick below-->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!--Slick below-->
+    <script type="text/javascript" src="slick/slick.js"></script>
     <script src="./main.js"></script>
 </head>
 <header>
@@ -38,11 +43,11 @@
     </section>
     <div class="clearFix"></div>
     <!--gallery-->
-    <div id="galleryId"></div>
+    <!--     <div id="galleryId"></div> -->
     <section id="gallerySection">
-        <div class="gallery">
-            <h1 class="gallery">Gallery</h1>
-            <div id="imagebox">
+        <h1>Gallery</h1>
+        <div class="container">
+            <div class="single-item">
                 <img src="images/beerLogoAB.png" alt="Beer Logo" class="gallery">
                 <img src="images/beerLogoOkt.png" alt="Oktoberfet" class="gallery">
                 <img src="images/beerLogoESB.png" alt="ESB Logo" class="gallery">
@@ -54,16 +59,23 @@
     <div id="quotesId"></div>
     <section id="quotesSection">
         <h1> Quotes</h1>
-        <p>Here is a quote about how much I enjoy Shawn's work and presence. He's a fun person who showers regularly.
-            <br>&mdash; Alan B.</p>
-        <p>This is a another quote about how much I enjoy working with Shawn. He likes beer, has a good sense of humor and seems to shower regularly.
-            <br>&mdash; Betty C.</p>
-        <p>This is a third quote. Shawn looks at the bright side even when CSS and Javascript are not fun.
-            <br>&mdash; Charles D.</p>
+        <div class="superQuotes">
+            <div>
+                <p>Here is a quote about how much I enjoy Shawn's work and presence. He's a fun person who showers regularly.
+                    <br>&mdash; Alan B.</p>
+            </div>
+            <div>
+                <p>This is a another quote about how much I enjoy working with Shawn. He likes beer, has a good sense of humor and seems to shower regularly.
+                    <br>&mdash; Betty C.</p>
+            </div>
+            <div>
+                <p>This is a third quote. Shawn looks at the bright side even when CSS and Javascript are not fun.
+                    <br>&mdash; Charles D.</p>
+            </div>
+        </div>
     </section>
     <div class="clearFix"></div>
     <!--form-->
-    <div id="contactId"></div>
     <section id="formSection">
         <div class="contact">
             <form id="contactForm">
