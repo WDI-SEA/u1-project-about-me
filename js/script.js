@@ -1,9 +1,11 @@
 $(function() {
+
+    // hide title page
     $("#title").on("mouseover", function() {
         $("*").removeClass('hidden');
         $("#title").addClass('hidden');
     });
-
+    // submit form
     $(".submit").on('click', function(event) {
         event.preventDefault();
 
@@ -20,6 +22,24 @@ $(function() {
             }
         });
     });
-    // hide title page
+
+
+    // carousel
+    // $('.caro-box').slick({
+    //     infinite: true,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 6,
+    //     autoplay: true,
+    //     autoplaySpeed: 1000
+    // });
+
+    $('.sectionthree').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 6,
+        autoplay: true,
+        autoplaySpeed: 2000
+    });
+
 
 });

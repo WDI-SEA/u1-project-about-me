@@ -343,6 +343,13 @@
         font-size: 10px;
         text-align: left;
     }
+    /*<!-- specificy a width: and height in my css .caro-box to make size of images consistent -->*/
+    
+    .carousel {
+        /*/*width: 100%;*/
+        height: 200px;
+        */
+    }
     /*-----------------------------------------*/
     /*************@media query***********************/
     
