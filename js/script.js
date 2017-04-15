@@ -30,7 +30,7 @@ $(function() {
         slidesToShow: 1,
         slidesToScroll: 6,
         autoplay: true,
-        autoplaySpeed: 2000
+        autoplaySpeed: 500
     });
 
 
