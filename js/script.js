@@ -25,21 +25,14 @@ $(function() {
 
 
     // carousel
-    // $('.caro-box').slick({
-    //     infinite: true,
-    //     slidesToShow: 1,
-    //     slidesToScroll: 6,
-    //     autoplay: true,
-    //     autoplaySpeed: 1000
-    // });
-
-    $('.sectionthree').slick({
+    $('#carousel').slick({
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 6,
         autoplay: true,
         autoplaySpeed: 2000
     });
+
 
 
 });
