@@ -8,6 +8,7 @@ function slideHamburgerMenuClosed() {
 
 // js executed once page has finished loading
 $(function() {
+    console.log('JQuery loaded');
     // add smooth scrolling to the nav's anchors
     $("nav").on('click', 'a', function(event) {
         event.preventDefault();
@@ -32,6 +33,14 @@ $(function() {
                 $(".navigation > ul > li > a[href='#" + id + "']").addClass("active");
             }
         });
+    });
+    // Initialize the Slick carousel slider
+    $(".autoplay").slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
     });
 
     // Add the hamburger menu click event to show and hide the menu
