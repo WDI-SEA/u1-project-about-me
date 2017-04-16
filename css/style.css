@@ -21,7 +21,7 @@ header {
     /* Full width */
     width: 100%;
     /*Position the header in front of project images and dots*/
-    z-index: 1000000000;
+    z-index: 10000;
 }
 
 section {
@@ -257,7 +257,7 @@ footer p {
     font-weight: bold;
     cursor: pointer;
     outline: none;
-    z-index: 10000000000000;
+    z-index: 100000;
 }
 
 .cross {
@@ -274,7 +274,7 @@ footer p {
     font-weight: bold;
     cursor: pointer;
     outline: none;
-    z-index: 10000000000000;
+    z-index: 100000;
 }
 
 
@@ -307,6 +307,40 @@ footer p {
 
 .slick-dots li button:before {
     font-size: 14px;
+}
+
+
+/*"Super Simple Lightbox" CSS*/
+
+#lightbox {
+    /* keeps the lightbox window in the current viewport */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    /*Center the image in the lightbox*/
+    text-align: center;
+    /*display the lightbox in front of all other elements*/
+    z-index: 1000000;
+    display: none;
+}
+
+#lightbox p {
+    text-align: right;
+    color: #fff;
+    margin-right: 1.5em;
+    font-size: 1em;
+}
+
+#lightbox img {
+    box-shadow: 0 0 2em #111;
+    -webkit-box-shadow: 0 0 2em #111;
+    -moz-box-shadow: 0 0 2em #111;
+    /*max-width: 90%;*/
+    width: 90%;
+    object-fit: contain;
 }
 
 

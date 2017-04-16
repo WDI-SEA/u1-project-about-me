@@ -8,7 +8,6 @@ function slideHamburgerMenuClosed() {
 
 // js executed once page has finished loading
 $(function() {
-    console.log('JQuery loaded');
     // add smooth scrolling to the nav's anchors
     $("nav").on('click', 'a', function(event) {
         event.preventDefault();
@@ -43,7 +42,7 @@ $(function() {
         autoplay: true,
         autoplaySpeed: 4000,
         speed: 800,
-        arrows: false,
+        arrows: true,
         pauseOnDotsHover: true
     });
 
@@ -58,6 +57,51 @@ $(function() {
         var slickTrack = $(this).find('.slick-track');
         var slickTrackHeight = $(slickTrack).height();
         $(this).find('.slick-slide').css('height', slickTrackHeight + 'px');
+    });
+
+    // Add the click function to the carousel slides to show the lightbox
+    $('.slick-slider').on('click', '.slick-slide', function(event) {
+        //prevent default action (hyperlink)
+        event.preventDefault();
+        //get the clicked image src of the image to be displayed
+        var imageSrc = $(this).attr("src");
+
+        /*
+        If the lightbox window HTML already exists in document,
+        change the img src to to match the src of whatever image was clicked
+
+        If the lightbox window HTML doesn't exist, create it and insert it.
+        (This will only happen the first time the lightbox is displayed)
+        */
+        if ($('#lightbox').length > 0) { // the #lightbox exists
+
+            //insert img tag with clicked image's src as src value
+            $('#content').html('<img src="' + imageSrc + '" />');
+
+        } else { // the #lightbox does not exist
+
+            //create HTML markup for lightbox window dynamically
+            var lightbox =
+                '<div id="lightbox">' +
+                '<p>Click window to close</p>' +
+                '<div id="content">' + //insert clicked link's href into img src
+                '<img src="' + imageSrc + '" />' +
+                '</div>' +
+                '</div>';
+            //insert lightbox HTML into the body
+            $('body').append(lightbox);
+        }
+        // keep the image smaller than the current screen height
+        var maxHeight = $('#lightbox').height() - 65;
+        $("#lightbox img").css("max-height", maxHeight + "px");
+
+        //show lightbox window to the user
+        $('#lightbox').fadeIn(400);
+    });
+
+    //Click anywhere on the page to get rid of lightbox window
+    $('body').on('click', '#lightbox', function() { //use delegated event listener, as the lightbox element is inserted into the DOM dynamically
+        $(this).fadeOut(300);
     });
 
     // Add the hamburger menu click event to show and hide the menu
