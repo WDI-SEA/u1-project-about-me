@@ -1,11 +1,9 @@
 $(function() {
-
-    // hide title page
     $("#title").on("mouseover", function() {
         $("*").removeClass('hidden');
         $("#title").addClass('hidden');
     });
-    // submit form
+
     $(".submit").on('click', function(event) {
         event.preventDefault();
 
@@ -22,17 +20,6 @@ $(function() {
             }
         });
     });
-
-
-    // carousel
-    $('#carousel').slick({
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 6,
-        autoplay: true,
-        autoplaySpeed: 500
-    });
-
-
+    // hide title page
 
 });
