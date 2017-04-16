@@ -15,6 +15,12 @@ $(document).ready(function() {
 
 
 
+//*************SLIDER/CAROUSEL********************************//
+$(document).ready(function() {
+    $(".slider").slick({
+        dots: true
+    });
+});
 
 
 
@@ -23,8 +29,6 @@ $(document).ready(function() {
 
 
 
-
-//**********Slider**************************//
 //     var width = 720;
 //     var animationSpeed = 1000;
 //     var pause = 1000;
@@ -46,7 +50,7 @@ $(document).ready(function() {
 //                 $sliderContainer.css('margin-left', 0);
 //             }
 //         });
-//     }
+//     }):
 
 // }, pause);
 

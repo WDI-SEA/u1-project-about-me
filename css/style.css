@@ -1,15 +1,11 @@
+/*****Entire Page*******/
+
 body {
     padding: 0;
     margin: 0;
+    border: 0;
     font-family: 'Raleway', sans-serif;
-}
-
-
-/*/* Global */
-
-.container {
-    margin: auto;
-    overflow: hidden;
+    line-height: 1;
 }
 
 img {
@@ -18,43 +14,46 @@ img {
 }
 
 
-/* Header **/
+/********Header **************/
 
-header {
-    /* background: url("images/kauai.jpg") no-repeat;*/
-    min-height: 70px;
-    border-bottom: #73A580 7px solid;
-    padding: 0;
+.flex-container nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
 }
 
-header a {
-    color: #ffffff;
+ul {
+    display: flex;
+    text-decoration: none;
+}
+
+li {
+    padding: 25px;
+}
+
+a {
+    text-decoration: none;
+    color: gray;
+}
+
+ul {
+    color: #eee;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 18px;
     padding: 5px;
+    list-style: none;
+    /* float: left;*/
 }
 
-header li {
-    float: left;
-    display: inline;
-    padding: 10px 20px 10px 20px;
+h1 {
+    margin-left: 30px;
 }
 
-
-/*header #banner {
-    float: left;
-}*/
-
-header #banner h1 {
-    margin: 0;
-    padding-left: 20px;
-    text-align: center;
-}
-
-header nav {
-    background: #eee;
-    padding: 15px;
+.nav-bar {
+    background: lightblue;
     width: 100%;
     top: 0;
     left: 0;
@@ -62,7 +61,8 @@ header nav {
     position: fixed;
 }
 
-.sticky {
+
+/*.sticky {
     position: fixed;
     width: 100%;
     left: 0;
@@ -77,121 +77,160 @@ header nav {
     position: fixed;
     width: 100%;
 }
+*/
 
-.nav_bar {
-    position: fixed;
-}
-
-header h1 {
-    text-align: center;
+.nav_bar ul {
+    display: flex;
+    text-decoration: none;
 }
 
 header a:hover {
-    color: #e8491d;
+    color: black;
     font-weight: bold;
 }
 
 
-/**********FRONT COVER*******************/
+/**********IT'S ME Image Section*****************/
 
-.container-cover {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-}
-
-.container img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    margin: auto;
-    min-width: 50%;
-    min-height: 50%;
-    opacity: 50%;
-}
-
-
-/*************Slider***********************/
-
-
-/*#slider {
-    width: 720px;
-    height: 400px;
-    overflow: hidden;
-}
-
-#slider .slides {
-    display: block;
-    width: 6000px;
-    height: 400px;
-    margin: 0;
-    padding: 0;
-}
-
-#slider .slide {
-    float: left;
-    list-style-type: none;
-    width: 720px;
-    height: 400px;
-}*/
-
-
-/*****************MIDDLE BOX**************/
-
-.container-1 {
-    margin: 0;
-    background-color: gray;
-    min-height: 600px;
-    padding-top: 40px;
-    margin-top: 20px;
-}
-
-.container-1 h3 {
+.flex-container-1 h1 {
     text-align: center;
-    color: lightgray;
+    color: black;
+    font-size: 50px;
 }
 
-.description {
-    height: 800px;
+.flex-container-1 h3 {
     text-align: center;
-}
-
-.label img {
-    border-radius: 80%;
-    padding: 25px;
-    width: 300px;
-    margin-left: 60px;
-    border: 10px solid white;
-}
-
-img {
-    margin: 0 auto;
-    width: 70%;
+    font-size: 20px;
 }
 
 .label {
     padding-bottom: 45px;
     padding-top: 45px;
+    background-image: url('../images/whistler.jpg');
+    background-size: cover;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.aboutMe {
+    background-color: lightgray;
+}
+
+
+/*************ABOUT ME Article********************/
+
+.flex-container-2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+}
+
+.imagebox {
+    display: flex;
+}
+
+.imagebox img {
+    border-radius: 80%;
+    padding: 9px;
+    width: 200px;
+    margin-left: 40px;
+    border: 5px solid gray;
+    height: 200px;
+}
+
+img {
+    margin: 0 auto;
+    width: 50%;
+}
+
+.name {
+    margin-top: 20px;
+    background-color: lightgray;
+    color: #000000;
+    text-align: center;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+.imagebox p {
+    display: flex;
+    padding-left: 30px;
+}
+
+
+/***********SLIDE Section************************/
+
+.slider {
+    margin: 0 auto;
+    padding: 40px;
+    width: 80%;
+    z-index: 100;
+}
+
+
+/**********PORTFOLIO Section*************/
+
+.boxes .container-holder {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+.wrapper2 h3 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 50px;
+    letter-spacing: 10px;
+    border-bottom: 10px solid #eee;
+}
+
+.boxes .box {
+    width: 33%;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+}
+
+.boxes p {
+    font-size: 10px;
+    display: flex;
+}
+
+.read input {
+    text-align: center;
+    border-color: #000000;
 }
 
 
 /*************Testimonial****************/
 
-.testimonial {
-    max-width: 100%;
+.wrapper3 h3 {
+    letter-spacing: 10px;
     text-align: center;
 }
 
-.wrapper .say {
+
+/*.testimonial {
+    max-width: 100%;
+    text-align: center;
+}
+*/
+
+.wrapper3 .say {
     border-bottom: 10px solid #eee;
 }
 
 
-/* Forms*/
+/*******CONTACT ME Section*******************/
+
+
+/***************FORM Section*********************/
+
+.sidebar h3 {
+    margin: 0 auto;
+}
 
 form input {
     border-color: black;
@@ -206,9 +245,6 @@ form input {
     float: right;
 }
 
-
-/*******************FORMS*********************/
-
 form input {
     border-color: black;
 }
@@ -218,8 +254,8 @@ form input {
     margin: 0 auto 1em;
 }
 
-input {
-    width: 100%;
+.read input {
+    width: 40%;
 }
 
 textarea {

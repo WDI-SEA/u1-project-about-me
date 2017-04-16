@@ -5,87 +5,132 @@
     <meta charset="utf-8">
     <meta name="This is a website about Emmeline" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Emmeline Aquino</title>
+    <title>Welcome to Emmeline Aquino's Site</title>
     <link rel="author" href="humans.txt">
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
 </head>
 
 <body>
+    <!--    //**************Header Navigation Bar*****************// -->
     <header>
-        <div class="container">
-            <div id="banner"></div>
-            <nav class="nav_bar">
-                <ul class="nav_links">
-                    <li class="about"><a href="index">About</a></li>
-                    <li><a href="portfolio">Portofolio</a></li>
-                    <li><a href="contact">Contact</a></li>
+        <div class="flex-container">
+            <nav class="nav-bar">
+                <h1>Welcome to my Site</h1>
+                <ul>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portofolio</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </nav>
-            <!--       <h1>Hi!  I'm Emmeline</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum voluptas voluptatibus architecto veniam labore laboriosam repellendus eveniet nihil. Autem illo aut iure vitae molestias voluptatum harum doloribus corrupti accusantium cupiditate!</p> -->
         </div>
     </header>
-    <!--     <div class="container-cover">
-        <h2>Hi!  I'm Emmeline</h1>
-        <img src="images/kee.jpg" alt=" kauai">
-        <h3>Web Developer</h3>
-    </div> -->
-    <!------SLIDER IMAGES---------->
-    <!-- <div class="container-1 ">
-        <div id="slider ">
-            <ul class="slides ">
-                <li class="slide "><img src="images/kauai.jpg "></li>
-                <li class="slide "><img src="images/kee.jpg "></li>
-                <li class="slide "><img src="images/mtbaker.jpg "></li>
-            </ul>
+    <!--//****************It's Me Image Container****************// -->
+    <section class="flex-container-1">
+        <div class="wrapper">
+            <div class="label ">
+                <h1 class="myName">Hi! I'm Emmeline Aquino</h1>
+                <h3 class="myName">Student</h3>
+            </div>
         </div>
-    </div> -->
-    <div class="container-1 ">
-        <section class="wrapper ">
-            <div class="label "><img src="images/itsme1.jpg">
-                <h3>Emmeline Aquino<h3>
+    </section>
+    <!--//****************About Me Article*********************// -->
+    <section class="aboutMe">
+        <div class="name">
+            <h3>About Me</h3>
+        </div>
+        <div class="flex-container-2">
+            <div class="imagebox">
+                <img src="images/itsme1.jpg">
             </div>
-            <div class="position-title ">
-            <h3>Web Developer</h3>
+            <div class="imagebox ">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales, ante sed lobortis semper, tortor magna aliquam mauris, vitae sollicitudin neque risus nec nisl.</p>
             </div>
-            <section class="container">
-                <div class="aboutme ">
-                    <h3>About Me</h3>
-                    <div class="description ">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales, ante sed lobortis semper, tortor magna aliquam mauris, vitae sollicitudin neque risus nec nisl. Nullam gravida lobortis arcu, non luctus ligula placerat at. Proin ornare, quam dapibus tempus porta, sapien diam porttitor nunc, vitae lacinia ipsum leo sit amet tellus. Integer consequat, erat eget euismod egestas, neque quam convallis sem, vel pellentesque lorem massa interdum quam.
-                    </div>
+        </div>
+    </section>
+    <div class="wrapper2">
+        <h3>Portfolio</h3>
+    </div>
+    <!--<!//*********************SLIDER IMAGES***************************//> -->
+    <div class="container-slider">
+        <div class="slider">
+            <div><img data-lazy="images/BlogChallenge.png"></div>
+            <div><img data-lazy="images/racergame.png"></div>
+            <div><img data-lazy="images/shoppingcart.png "></div>
+        </div>
+    </div>
+    <!--    //******************Portfolio Section***********************// -->
+    <section class="boxes">
+        <div class="container-holder">
+            <div class="box">
+                <img src="images/BlogChallenge.png" alt="travel blog">
+                <h3>Travel Blog Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+                <div class="read">
+                    <input type="text" placeholder="Read More">
                 </div>
-            </section>
-            <section class="container">
-                <div class="wrapper">
-                    <h3 class="say">Testimonial</h3>
-                    <div class="say2">
-                        <p>Proin ornare, quam dapibus tempus porta, sapien diam porttitor nunc, vitae lacinia ipsum leo sit amet tellus. Integer consequat, erat eget euismod egestas, neque quam convallis sem, vel pellentesque lorem massa interdum quam. </p>
-                    </div>
-            </section>
-            <aside id="sidebar">
-                <div class="formbox">
-                    <h3 class="talk">Yo! Love To Hear From You.</h3>
-                    <form class="contact-me">
-                        <div>
-                            <label>Name</label>
-                            <br>
-                            <input type="text" placeholder="Name">
-                        </div>
-                        <div>
-                            <label>Email</label>
-                            <br>
-                            <input type="email" placeholder="Emial Address">
-                            <label>Message</label>
-                            <br>
-                            <textarea placeholder="Message"></textarea>
-                        </div>
-                        <button class="button_1" type="submit">Send</button>
-                    </form>
+            </div>
+            <div class="box">
+                <img src="images/racergame.png" alt="turtle race game">
+                <h3>Racer Game Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+                <div class="read">
+                    <input type="text" placeholder="Read More">
                 </div>
-            </aside>
+            </div>
+            <div class="box">
+                <img src="images/shoppingcart.png" alt="shopping list">
+                <h3>Shopping Cart Project</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                <div class="read">
+                    <input type="text" placeholder="Read More">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--    //*******************Testimonial************************// -->
+    <section class="container">
+        <div class="wrapper3">
+            <h3 class="say">Testimonial</h3>
+            <div class="say2">
+                <p>Proin ornare, quam dapibus tempus porta, sapien diam porttitor nunc, vitae lacinia ipsum leo sit amet tellus. Integer consequat, erat eget euismod egestas, neque quam convallis sem, vel pellentesque lorem massa interdum quam. </p>
+            </div>
+        </div>
+    </section>
+    <!-- //***************Contact / Form Info *****************************//      -->
+    <aside id="sidebar">
+        <h3>Contact Me</h3>
+        <div class="contactInfo">
+            <p>Emmeline Aquino
+                <br> Seattle, WA</p>
+        </div>
+        <div class="formbox">
+            <h3 class="talk">Yo! Love To Hear From You.</h3>
+            <form class="contact-me">
+                <div>
+                    <label>Name</label>
+                    <br>
+                    <input type="text" placeholder="Name">
+                </div>
+                <div>
+                    <label>Email</label>
+                    <br>
+                    <input type="email" placeholder="Email Address">
+                    <label>Message</label>
+                    <br>
+                    <textarea placeholder="Message"></textarea>
+                </div>
+                <button class="button_1" type="submit">Send</button>
+            </form>
+        </div>
+    </aside>
 </body>
 
 </html>
