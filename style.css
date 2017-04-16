@@ -1,8 +1,7 @@
 body {
-    font-family: /*"Lato",
-*/
-    sans-serif;
+    font-family: sans-serif;
     background-color: #f0f3f5;
+    font-size: 1.2em;
 }
 
 .hidden {
@@ -108,63 +107,51 @@ h4 {
     color: #3d4d58;
 }
 
-#aboutId {
-    padding-top: 150px;
-    margin-top: -150px;
+#aboutSection {
+    width: 100%;
 }
 
 .about {
-    width: 80%;
+    width: 70%;
 }
 
 .about h1 {
     font-weight: 400;
     font-size: 1.5em;
     letter-spacing: 0.2em;
-    margin: 5% auto;
     text-align: center;
+    margin: 0 auto 5%;
+    padding-top: 250px;
+    margin-top: -220px;
 }
 
 .about p {
-    /*width: 70%;
-*/
     line-height: 200%;
-    font-family: /*"Raleway",
-*/
-    sans-serif;
+    font-family: sans-serif;
     margin-bottom: 2%;
 }
 
 
-/*===hr===*/
-
-
-/*
-hr {
-    width: 60%;
-    height: 3px;
-    background-color: #1f282d;
-    margin: 0 auto 5%;
-    border-style: none;
-}*/
-
-
 /*===gallery===*/
+
+#gallerySection {
+    margin: 5em auto;
+}
 
 #gallerySection h1 {
     font-weight: 400;
     font-size: 1.5em;
     letter-spacing: 0.2em;
-    margin: 5% auto;
     text-align: center;
     width: 100%;
     color: #3d4d58;
+    margin: 0 auto 5%;
+    padding-top: 190px;
+    margin-top: -170px;
 }
 
 .container {
     margin: 0 auto;
-    /*padding: 40px;
-*/
     width: 100%;
     color: #333;
     background: #1f282d;
@@ -180,15 +167,12 @@ hr {
 
 /*===quotes===*/
 
-
-/*#quotesId {
-    padding-top: 150px;
-    margin-top: -150px;
-}*/
-
 #quotesSection {
-    width: 60%;
-    /*    text-align: left;*/
+    width: 100%;
+}
+
+.superQuotes {
+    width: 40%;
     margin: 5% auto;
     color: #3d4d58;
 }
@@ -197,14 +181,14 @@ hr {
     font-weight: 400;
     font-size: 1.5em;
     letter-spacing: 0.2em;
-    margin: 5% auto;
     text-align: center;
     color: #3d4d58;
+    margin: 0 auto 5%;
+    padding-top: 190px;
+    margin-top: -170px;
 }
 
 #quotesSection p {
-    /*width: 50%;
-*/
     line-height: 200%;
     font-family: sans-serif;
     margin-bottom: 2%;
@@ -216,14 +200,11 @@ hr {
 /*===contact===*/
 
 #contactForm {
-    width: 80%;
-    margin: 0 auto;
+    width: 50%;
+    margin: 0 auto 5%;
 }
 
 .contact div {
-    width: 100%;
-    margin: 0.5em 0;
-    padding: 1em 0;
     text-align: center;
     color: #3d4d58;
 }
@@ -274,7 +255,7 @@ textarea {
 
 #submitButt {
     background-color: #849fb0;
-    color: #c3ced5;
+    color: white;
     border-style: none;
     border: 1px solid transparent;
     padding: 1em 0;
