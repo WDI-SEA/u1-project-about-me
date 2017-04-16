@@ -164,7 +164,7 @@
      color: white;
      background: black;
  }
- /*---------------------experience: Beyond the Code------------*/
+ /*---------------------Experience: Beyond the Code------------*/
  
  .experience {
      background-color: white;
@@ -276,8 +276,7 @@
      text-align: left;
  }
  /*-----------scrolling quotes-------------------*/
- 
- .bq-quote {
+ /*.bq-quote {
      font-size: 1em;
      line-height: 1.45;
      margin: 0 auto;
@@ -289,7 +288,7 @@
  .bq-quote p {
      font-size: .70em;
      color: gray;
- }
+ }*/
  
  .aside {
      color: white;
@@ -308,7 +307,6 @@
  }
  
  .cust-quotes {
-     /*width: 640px;*/
      height: 200px;
      position: relative;
      text-align: center;
@@ -466,6 +464,22 @@
      h1 {
          font-size: 2.25em;
          font-weight: 900;
+     }
+     .single-item h1 {
+         color: white;
+         padding: 50px 0 0 0;
+         font-weight: 700;
+         font-size: 9px;
+     }
+     .aside h2 {
+         font-size: 1.5em;
+         color: white;
+         padding: 0 0 35px 0;
+     }
+     .cust-quotes blockquote p {
+         font-size: 14px;
+         line-height: 20px;
+         margin-top: 20px;
      }
  }
  /*---------------end mobile responsive @media query-------------*/

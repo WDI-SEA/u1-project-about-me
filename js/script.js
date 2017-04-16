@@ -1,16 +1,30 @@
 $(function() {
+    // -------------hide title page---------------------
     $("#title").on("mouseover", function() {
         $("*").removeClass('hidden');
         $("#title").addClass('hidden');
     });
 
-    // desktop carousel
+    // -----------desktop carousel------------------------
     $(".single-item").slick({
         dots: true
     });
-    // responsive carousel
+    // -----------Moblie Responsive Carousel----------------
 
+    $('.carousel').slick({
+        dots: true,
+        responsive: [{
+            breakpoint: 600,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+            }
+        }]
+    });
 
+    // ---------comment form--------------------------
     $(".submit").on('click', function(event) {
         event.preventDefault();
 
@@ -27,16 +41,16 @@ $(function() {
             }
         });
     });
-    // hide title page
+
 
 });
 
 
 
-// end js
+// ----------Scrolling Quotes--------------
 
 
-function initQuoteCarousel() {
+function scrollQuote() {
 
     var $quotesWrapper = $(".cust-quotes");
     var $quotes = $quotesWrapper.find("blockquote");
@@ -57,5 +71,5 @@ function initQuoteCarousel() {
 }
 
 $(function() {
-    initQuoteCarousel();
+    scrollQuote();
 });
