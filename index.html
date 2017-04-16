@@ -19,15 +19,16 @@
 </head>
 
 <body>
+    <div id="top"></div>
     <!--    //**************Header Navigation Bar*****************// -->
     <header>
         <div class="flex-container">
             <nav class="nav-bar">
-                <h1>Welcome to my Site</h1>
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Portofolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                <img src="images/myname.jpg">
+                <ul class="menu">
+                    <li><a href="#" id="1">About</a></li>
+                    <li><a href="#" id="2">Portofolio</a></li>
+                    <li><a href="#" id="3">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -43,7 +44,7 @@
     </section>
     <!--//****************About Me Article*********************// -->
     <section class="aboutMe">
-        <div class="name">
+        <div class="name" id="section1">
             <h3>About Me</h3>
         </div>
         <div class="flex-container-2">
@@ -51,86 +52,95 @@
                 <img src="images/itsme1.jpg">
             </div>
             <div class="imagebox ">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales, ante sed lobortis semper, tortor magna aliquam mauris, vitae sollicitudin neque risus nec nisl.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales, ante sed lobortis semper, tortor magna aliquam mauris, vitae sollicitudin neque risus nec nisl.
+                    <br>
+                    <br>Proin ornare, quam dapibus tempus porta, sapien diam porttitor nunc, vitae lacinia ipsum leo sit amet tellus. Integer consequat, erat eget euismod egestas, neque quam convallis sem, vel pellentesque lorem massa interdum quam.</p>
             </div>
         </div>
     </section>
-    <div class="wrapper2">
-        <h3>Portfolio</h3>
-    </div>
-    <!--<!//*********************SLIDER IMAGES***************************//> -->
-    <div class="container-slider">
-        <div class="slider">
-            <div><img data-lazy="images/BlogChallenge.png"></div>
-            <div><img data-lazy="images/racergame.png"></div>
-            <div><img data-lazy="images/shoppingcart.png "></div>
+    <section class="portfolio-1">
+        <div class="wrapper2" id="section2">
+            <h3>Portfolio</h3>
         </div>
-    </div>
-    <!--    //******************Portfolio Section***********************// -->
-    <section class="boxes">
-        <div class="container-holder">
-            <div class="box">
-                <img src="images/BlogChallenge.png" alt="travel blog">
-                <h3>Travel Blog Project</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-                <div class="read">
-                    <input type="text" placeholder="Read More">
-                </div>
+        <!--<!//*********************SLIDER IMAGES***************************//> -->
+        <div class="container-slider">
+            <div class="slider">
+                <div><img data-lazy="images/BlogChallenge.png"></div>
+                <div><img data-lazy="images/racergame.png"></div>
+                <div><img data-lazy="images/shoppingcart.png "></div>
             </div>
-            <div class="box">
-                <img src="images/racergame.png" alt="turtle race game">
-                <h3>Racer Game Project</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
-                <div class="read">
-                    <input type="text" placeholder="Read More">
+        </div>
+        <!--    //******************Portfolio Section***********************// -->
+        <div class="boxes">
+            <div class="container-holder">
+                <div class="box">
+                    <img src="images/BlogChallenge.png" alt="travel blog">
+                    <h3>Travel Blog Project</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+                    <div class="read">
+                        <input type="text" placeholder="Read More">
+                    </div>
                 </div>
-            </div>
-            <div class="box">
-                <img src="images/shoppingcart.png" alt="shopping list">
-                <h3>Shopping Cart Project</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                <div class="read">
-                    <input type="text" placeholder="Read More">
+                <div class="box">
+                    <img src="images/racergame.png" alt="turtle race game">
+                    <h3>Racer Game Project</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
+                    <div class="read">
+                        <input type="text" placeholder="Read More">
+                    </div>
+                </div>
+                <div class="box">
+                    <img src="images/shoppingcart.png" alt="shopping list">
+                    <h3>Shopping Cart Project</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                    <div class="read">
+                        <input type="text" placeholder="Read More">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!--    //*******************Testimonial************************// -->
     <section class="container">
-        <div class="wrapper3">
+        <div class="wrapper3" id="section3">
             <h3 class="say">Testimonial</h3>
             <div class="say2">
-                <p>Proin ornare, quam dapibus tempus porta, sapien diam porttitor nunc, vitae lacinia ipsum leo sit amet tellus. Integer consequat, erat eget euismod egestas, neque quam convallis sem, vel pellentesque lorem massa interdum quam. </p>
+                <p>Proin ornare, quam dapibus tempus porta, sapien diam porttitor nunc, vitae lacinia ipsum leo sit amet tellus. Integer consequat, erat eget euismod egestas, neque quam convallis sem, vel pellentesque lorem massa interdum quam.
+                    <br>
+                    <br>- anonymous</p>
             </div>
         </div>
     </section>
     <!-- //***************Contact / Form Info *****************************//      -->
-    <aside id="sidebar">
-        <h3>Contact Me</h3>
-        <div class="contactInfo">
-            <p>Emmeline Aquino
-                <br> Seattle, WA</p>
+    <section class="container-form">
+        <div class="wrapper4">
+            <h3 class="contact"></h3>
+            <p>Feel Free to Contact me @ emmeline.aquino@gmail.com</p>
         </div>
-        <div class="formbox">
-            <h3 class="talk">Yo! Love To Hear From You.</h3>
-            <form class="contact-me">
-                <div>
-                    <label>Name</label>
-                    <br>
-                    <input type="text" placeholder="Name">
-                </div>
-                <div>
-                    <label>Email</label>
-                    <br>
-                    <input type="email" placeholder="Email Address">
-                    <label>Message</label>
-                    <br>
-                    <textarea placeholder="Message"></textarea>
-                </div>
-                <button class="button_1" type="submit">Send</button>
-            </form>
-        </div>
-    </aside>
+        <aside id="sidebar">
+            <div class="dark">
+                <h3>Love to Hear From You!</h3>
+                <form class="contactMe">
+                    <div>
+                        <label>Name</label>
+                        <br>
+                        <input type="text" placeholder="Name">
+                    </div>
+                    <div>
+                        <label>Email</label>
+                        <br>
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <br>
+                        <textarea placeholder="Message"></textarea>
+                    </div>
+                    <button class="button_1" type="submit">Send</button>
+                </form>
+            </div>
+        </aside>
+    </section>
 </body>
 
 </html>
