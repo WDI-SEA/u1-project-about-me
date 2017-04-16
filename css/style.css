@@ -11,6 +11,10 @@ body {
     background-image: url("../images/header_image.jpg");
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+    /* height: 31.14em;*/
+>>>>>>> parent of cf7329f... mobile responsive
 =======
     /* height: 31.14em;*/
 >>>>>>> parent of cf7329f... mobile responsive
@@ -70,10 +74,13 @@ body {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 .navone li {
     font-size: 1.25em;
 }
 
+=======
+>>>>>>> parent of cf7329f... mobile responsive
 =======
 >>>>>>> parent of cf7329f... mobile responsive
 =======
@@ -217,7 +224,11 @@ img {
     padding: 25px 50px 80px 50px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 30em;
+=======
+    height: 23em;
+>>>>>>> parent of cf7329f... mobile responsive
 =======
     height: 23em;
 >>>>>>> parent of cf7329f... mobile responsive
@@ -233,6 +244,7 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 60px 50px 80px 50px;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     height: 32em;
@@ -253,6 +265,8 @@ img {
 =======
 =======
 >>>>>>> parent of cf7329f... mobile responsive
+=======
+>>>>>>> parent of cf7329f... mobile responsive
     height: 29em;
 }
 
@@ -268,6 +282,9 @@ img {
     text-align: center;
     padding: 0 30px 0 30px;
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cf7329f... mobile responsive
+=======
 >>>>>>> parent of cf7329f... mobile responsive
 =======
 >>>>>>> parent of cf7329f... mobile responsive
@@ -277,7 +294,11 @@ img {
     text-align: center;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 50px 0 50px 0;
+=======
+    padding: 50px 0 0 0;
+>>>>>>> parent of cf7329f... mobile responsive
 =======
     padding: 50px 0 0 0;
 >>>>>>> parent of cf7329f... mobile responsive
@@ -291,8 +312,13 @@ img {
     position: absolute;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     top: 0px;
     background-color: rgba(0, 0, 0, 0.7);
+=======
+    top: 50px;
+    background-color: black;
+>>>>>>> parent of cf7329f... mobile responsive
 =======
     top: 50px;
     background-color: black;
@@ -311,8 +337,13 @@ img {
     opacity: 1;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     transition: opacity 3s;
     height: 100%;
+=======
+    transition: opacity 1s;
+    /*height: 100%;*/
+>>>>>>> parent of cf7329f... mobile responsive
 =======
     transition: opacity 1s;
     /*height: 100%;*/
@@ -336,7 +367,10 @@ img {
     padding: 0 50px 0 50px;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     height: 28em;
+=======
+>>>>>>> parent of cf7329f... mobile responsive
 =======
 >>>>>>> parent of cf7329f... mobile responsive
 =======
@@ -351,7 +385,10 @@ img {
     box-sizing: border-box;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-size: 1em;
+=======
+>>>>>>> parent of cf7329f... mobile responsive
 =======
 >>>>>>> parent of cf7329f... mobile responsive
 =======
@@ -367,7 +404,10 @@ img {
     padding: 1.25em 0.63em;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     font-size: 1em;
+=======
+>>>>>>> parent of cf7329f... mobile responsive
 =======
 >>>>>>> parent of cf7329f... mobile responsive
 =======
@@ -398,8 +438,13 @@ img {
     background-color: black;
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     padding: 3em;
     height: 29em;
+=======
+    min-height: 6.25em;
+    padding: 3em;
+>>>>>>> parent of cf7329f... mobile responsive
 =======
     min-height: 6.25em;
     padding: 3em;
@@ -440,6 +485,7 @@ a:hover {
 }
 
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 /*-------comment-form--------*/
@@ -603,6 +649,37 @@ span {
         margin: 20px 10px 0px 10px;
     }
     
+=======
+/*************@media query***********************/
+
+
+/* @media (max-width: 35em) {
+        html {
+            font-size: .5em;
+            background-color: white;
+        }
+        .hamburger {
+            display: block;
+        }
+        .navone ul {
+            display: none;
+        }
+        .col-1-3 {
+            width: 100%;
+        }
+    }
+    
+    #gallery {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        height: 400px;
+        width: 80%;
+        margin: 20px 10px 0px 10px;
+    }
+    
+>>>>>>> parent of cf7329f... mobile responsive
     h1 {
         font-size: 3em;
     }
@@ -611,6 +688,9 @@ span {
         font-size: 2em;
     }
     
+<<<<<<< HEAD
+>>>>>>> parent of cf7329f... mobile responsive
+=======
 >>>>>>> parent of cf7329f... mobile responsive
     h3 {
         font-size: 1.5em;
@@ -637,6 +717,9 @@ span {
 
 /*-----------------------------------------*/
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of cf7329f... mobile responsive
+=======
 >>>>>>> parent of cf7329f... mobile responsive
 =======
 >>>>>>> parent of cf7329f... mobile responsive
