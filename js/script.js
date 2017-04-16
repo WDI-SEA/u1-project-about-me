@@ -4,6 +4,11 @@ $(function() {
         $("#title").addClass('hidden');
     });
 
+    $(".single-item").slick({
+        dots: true
+    });
+
+
     $(".submit").on('click', function(event) {
         event.preventDefault();
 
