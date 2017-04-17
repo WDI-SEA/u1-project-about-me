@@ -9,6 +9,11 @@ $(function() {
         return false;
     });
 
+    //===hamburger
+    //===Why won't this work???
+    $('.hamburger').click(function() {
+        $('.hamburgerNav').css('display', 'visible');
+    });
     //===contactForm
     var inputBox = $('.inputBox');
 
@@ -42,7 +47,7 @@ $(function() {
     $(".superQuotes").slick({
         arrows: false,
         autoplay: true,
-        autoplaySpeed: 6000,
+        autoplaySpeed: 5000,
         responsive: [{
             breakpoint: 560,
             settings: {
@@ -52,5 +57,6 @@ $(function() {
         }]
     });
     //end of JS
+    //===Do not Erase curly brace below
 
 });
