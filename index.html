@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html lang="zxx">
 
 <head>
     <meta charset="utf-8">
@@ -10,7 +10,7 @@
     <script src="https://code.jquery.com/jquery-3.1.1.js" integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://use.fontawesome.com/f528eb32f2.js"></script>
+    <script src="https://use.fontawesome.com/0e7eae8ef6.js"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js"></script>
@@ -25,7 +25,7 @@
     <header>
         <div class="flex-container">
             <nav class="nav-bar">
-                <a href="#" id="4"><img src="images/myname.jpg"></a>
+                <a href="#" id="4"><img src="images/myname.jpg" alt="my signature"></a>
                 <ul class="menu">
                     <li><a href="#" id="1">About</a></li>
                     <li><a href="#" id="2">Portofolio</a></li>
@@ -35,8 +35,8 @@
         </div>
     </header>
     <!--//****************It's Me Image Container****************// -->
-    <section class="flex-container-1">
-        <div class="wrapper" id="section4">
+    <section class="flex-container-1" id="section4">
+        <div class="wrapper">
             <div class="label ">
                 <h1 class="myName">Hi! I'm Emmeline Aquino</h1>
                 <h3 class="myName">Student</h3>
@@ -50,7 +50,7 @@
         </div>
         <div class="flex-container-2">
             <div class="imagebox">
-                <img src="images/itsme1.jpg">
+                <img src="images/itsme1.jpg" alt="my picture">
             </div>
             <div class="imagebox ">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sodales, ante sed lobortis semper, tortor magna aliquam mauris, vitae sollicitudin neque risus nec nisl.
@@ -66,16 +66,16 @@
         <!--<!//*********************SLIDER IMAGES***************************//> -->
         <div class="container-slider">
             <div class="slider">
-                <div><img data-lazy="images/BlogChallenge.png"></div>
-                <div><img data-lazy="images/racergame.png"></div>
-                <div><img data-lazy="images/shoppingcart.png "></div>
+                <div><img data-lazy="images/BlogChallenge.png" alt="Project"></div>
+                <div><img data-lazy="images/racergame.png" alt="Race Project"></div>
+                <div><img data-lazy="images/shoppingcart.png " alt="Cart Project"></div>
             </div>
         </div>
         <!--    //******************Portfolio Section***********************// -->
         <div class="boxes">
             <div class="container-holder">
                 <div class="box">
-                    <img src="images/BlogChallenge.png" alt="travel blog">
+                    <img class="img1" src="images/BlogChallenge.png" alt="travel blog">
                     <h3>Travel Blog Project</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
                     <div class="read">
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="box">
-                    <img src="images/racergame.png" alt="turtle race game">
+                    <img class="img1" src="images/racergame.png" alt="turtle race game">
                     <h3>Racer Game Project</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. </p>
                     <div class="read">
@@ -91,7 +91,7 @@
                     </div>
                 </div>
                 <div class="box">
-                    <img src="images/shoppingcart.png" alt="shopping list">
+                    <img class="img1" src="images/shoppingcart.png" alt="shopping list">
                     <h3>Shopping Cart Project</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                     <div class="read">
@@ -115,7 +115,6 @@
     <!-- //***************Contact / Form Info *****************************//      -->
     <section class="container-form">
         <div class="wrapper4">
-            <h3 class="contact"></h3>
             <p>Feel Free to Contact me @ emmeline.aquino@gmail.com</p>
         </div>
         <aside id="sidebar">

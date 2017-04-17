@@ -1,5 +1,10 @@
     /*****Entire Page*******/
     
+    html body {
+        width: 100%;
+        height: 100%;
+    }
+    
     body {
         padding: 0;
         margin: 0;
@@ -13,10 +18,6 @@
         height: 100%;
     }
     /********Header **************/
-    
-    header {
-        z-index: 110;
-    }
     
     .flex-container nav {
         width: 100%;
@@ -79,6 +80,16 @@
     header a:hover {
         color: black;
         font-weight: bold;
+    }
+    
+    .menu-icon {
+        display: hidden;
+        width: 40px;
+        height: 40px;
+    }
+    
+    #menu-icon a:hover {
+        border-radius: 4px 4px 0 0;
     }
     /**********IT'S ME Image Section*****************/
     
@@ -195,6 +206,11 @@
     
     .container-slider {
         background-color: lightslategray;
+    }
+    /********Light Box**********************/
+    
+    #light-box {
+        position: fixed;
     }
     /*************Testimonial****************/
     
