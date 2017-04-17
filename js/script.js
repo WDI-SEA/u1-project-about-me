@@ -45,10 +45,7 @@ $(function() {
 
 });
 
-
-
 // ----------Scrolling Quotes--------------
-
 
 function scrollQuote() {
 
@@ -72,4 +69,14 @@ function scrollQuote() {
 
 $(function() {
     scrollQuote();
+});
+
+
+// ------------------jump to section of page slowly using navone links---------------------------
+$(document).on('click', 'a', function(event) {
+    event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
 });
