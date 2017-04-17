@@ -16,13 +16,13 @@ You will be working individually for this project, but we'll be guiding you thro
 
 Your work must:
 
-- Use semantic markup for HTML and CSS, adhering to best practices.
-- Use Flexbox to create a multi-column layout.
+x Use semantic markup for HTML and CSS, adhering to best practices.
+x Use Flexbox to create a multi-column layout.
 - Be completely responsive.
-- Include separate HTML/CSS /JavaScript files.
+x Include separate HTML/CSS /JavaScript files.
 - Stick with the KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles.
-- Use JavaScript or jQuery for DOM manipulation.
-- Be deployed and accessible online. (Research and use GitHub Pages)
+x Use JavaScript or jQuery for DOM manipulation.
+x Be deployed and accessible online. (Research and use GitHub Pages)
 - Contain no "dead" code
 - Your code must pass our validators with flying colors
 
@@ -31,47 +31,47 @@ Your work must:
 
 #### Necessary Deliverables
 
-- A working site, built by you, hosted somewhere on the internet.
-- A Git repository, hosted on GitHub, that includes a link to your hosted site and frequent commits dating back to the beginning of the project.
-- Any pseudo code you created. Either have it in the `.js` file, or in a separate file
+x A working site, built by you, hosted somewhere on the internet.
+x A Git repository, hosted on GitHub, that includes a link to your hosted site and frequent commits dating back to the beginning of the project.
+x Any pseudo code you created. Either have it in the `.js` file, or in a separate file
 - A `README.md` file with explanations of:
   - Technologies used.
   - Your process/approach.
   - Unsolved problems.
   - Your biggest wins and challenges.
 - Screenshots of the snippets of code you used to solve particularly interesting problems (think code highlights).
-- An in-class demo of the site that shows off the interactions you worked on.
+x An in-class demo of the site that shows off the interactions you worked on.
 
-- A carousel whose images slide to the side on a timer, along with indicators that the user can click to navigate to a particular project.
+x A carousel whose images slide to the side on a timer, along with indicators that the user can click to navigate to a particular project.
 
 	![](readme-assets/carousel.gif)
-	
-- Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
+
+x Functionality that allows a carousel image to enlarge in a lightbox when the user clicks on it. Clicking anywhere on the screen when the lightbox is open should close the lightbox.
 
 	![](readme-assets/lightbox.gif)
 
-- Nav bar functionality that allows the page to scroll smoothly to the correspending section when a nav item is clicked.
+x Nav bar functionality that allows the page to scroll smoothly to the correspending section when a nav item is clicked.
 
 	![](readme-assets/smooth-scroll.gif)
-	
-- Nav bar functionality that highlights a nav item when the user scrolls to the corresponding section of the page.
-	
-	![](readme-assets/nav-highlight.gif)
-	
-- A testimonials section in which testimonials rotate in and out on a timer.
 
-	![](readme-assets/testimonials.gif)	
+x Nav bar functionality that highlights a nav item when the user scrolls to the corresponding section of the page.
+
+	![](readme-assets/nav-highlight.gif)
+
+x A testimonials section in which testimonials rotate in and out on a timer.
+
+	![](readme-assets/testimonials.gif)
 
 - A mobile nav that expands and collapses when a user clicks on the hamburger icon.
 
-	![](readme-assets/mobile-nav.gif)	
-	
-- Remember that you should customize the design of the site and make it your own. Here's a guideline for what the site could look like:
+	![](readme-assets/mobile-nav.gif)
 
-![](readme-assets/desktop.png)	
+x Remember that you should customize the design of the site and make it your own. Here's a guideline for what the site could look like:
 
-![](readme-assets/mobile.png)	
-	
+![](readme-assets/desktop.png)
+
+![](readme-assets/mobile.png)
+
 ---
 
 #### Starter Code
@@ -92,10 +92,10 @@ No starter code has been provided for this project, as you will be building your
 
 If you're looking for an extra challenge, try tackling some of the tasks below:
 
-* Add validation to the contact form to make sure the user has filled out all required fields before submitting.
-* Add a skills section featuring skills you have/will have learned in the class. 
+x Add validation to the contact form to make sure the user has filled out all required fields before submitting.
+x Add a skills section featuring skills you have/will have learned in the class.
 * Add functionality so that the carousel works with swiping on an iPad/iPhone.
-* Utilize an API.
+x Utilize an API.
 
 ---
 #### Need More Review?
@@ -124,11 +124,11 @@ Based on the requirements above, you can earn a maximum of **24** points on this
 |      | Incomplete | Does not Meet Expectations |  Meets Expecatations | Exceeds Expectations |
 |--- |---| --- | ---| --- |
 | Valid, semantic code, adhering to best practices |     |    |     |     |
-| Uses Flexbox to create a multi-column layout |     |    |     |     |  
+| Uses Flexbox to create a multi-column layout |     |    |     |     |
 | Is completely responsive |     |    |     |     |
-| Includes separate HTML/CSS/JavaScript files |     |    |     |     |  
+| Includes separate HTML/CSS/JavaScript files |     |    |     |     |
 | Sticks with the KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles |     |    |     |     |
-| Uses JavaScript or jQuery for DOM manipulation |     |    |     |     |  
+| Uses JavaScript or jQuery for DOM manipulation |     |    |     |     |
 | Includes the interactions listed under "Necessary Deliverables" |     |    |     |     |
 | Is deployed online |     |    |     |     |
 

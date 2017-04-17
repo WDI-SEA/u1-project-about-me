@@ -66,6 +66,7 @@ header {
     box-shadow: 0px .5px 5px #715956;
     position: fixed;
     width: 100%;
+    z-index: 1;
 }
 
 .main-nav-logo {
@@ -117,6 +118,7 @@ nav a:hover {
 .container {
     margin: 0 auto;
     width: 100%;
+    margin-top: 90px;
 }
 
 .main-photos {
@@ -124,28 +126,6 @@ nav a:hover {
     box-sizing: border-box;
     margin: 0 auto;
 }
-
-
-/*.slideshow-nav {
-    margin-top: -40px;
-    padding-bottom: 10px;
-    letter-spacing: 5px;
-}
-
-.fa-circle {
-    color: white;
-    font-size: 20px;
-}
-
-#dot1,
-#dot2,
-#dot3,
-#dot4,
-#dot5 {
-    color: white;
-    font-size: 20px;
-}
-*/
 
 
 /* ===================================== */
@@ -157,7 +137,7 @@ nav a:hover {
 /* ===================================== */
 
 #about {
-    background-color: white;
+    background-color: #fff;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -205,32 +185,16 @@ nav a:hover {
     align-items: center;
 }
 
-#quote1 {
+.quote {
+    display: none;
     box-sizing: border-box;
     text-align: center;
     width: 70%;
     align-self: center;
-    background-color: rgba(255, 255, 255, .5);
     padding: 30px 50px;
-    font-size: 16px;
+    font-size: 18px;
     font-style: italic;
     line-height: 24px;
-}
-
-.read-more a {
-    background-color: #6899AE;
-    font-weight: 400;
-    letter-spacing: .1em;
-    padding: 10px;
-    color: #F2EFEF;
-}
-
-.read-more a:hover {
-    background-color: #9A9500;
-}
-
-.read-more {
-    margin-top: -10px;
 }
 
 
