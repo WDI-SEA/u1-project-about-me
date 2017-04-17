@@ -187,7 +187,7 @@ img {
     justify-content: space-between;
     flex-wrap: wrap;
     padding: 60px 50px 80px 50px;
-    height: 30em;
+    height: 31em;
 }
 
 .experience h3 {
@@ -296,7 +296,7 @@ span {
 }
 
 
-/*-----------scrolling quotes-------------------*/
+/*-----------Tesrtionials: scrolling quotes-------------------*/
 
 
 /*.bq-quote {
@@ -447,15 +447,50 @@ span {
     .hamburger {
         display: block;
         position: absolute;
-        top: 0;
-        left: 0;
+        top: 0.1;
+        left: 0.1;
+        font-size: 2em;
+        color: black;
     }
-    .navone {
+    /*.navone {
+        display: none;
+    }*/
+    .hide-nav {
         display: none;
     }
-    .navone li {
-        font-size: 2em;
+    .navone ul {
+        display: flex;
+        flex-direction: column;
     }
+    .navone li {
+        font-size: 1em;
+        padding: 10px;
+    }
+    .navtwo {
+        text-align: center;
+        max-width: 10em;
+        margin: 0 auto;
+    }
+    .navtwo ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        /* margin-bottom: 1.56em;*/
+    }
+    .navtwo li {
+        font-size: 1.5em;
+        padding: 0px 17px;
+        justify-content: center;
+    }
+    /*.navtwo ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navtwo li {
+        font-size: 1em;
+        font-weight: 400;
+        list-style: none;
+    }*/
     .col-1-3 {
         width: 100%;
     }
@@ -484,7 +519,7 @@ span {
         font-weight: 600;
     }
     h1 {
-        font-size: 2.25em;
+        font-size: 2.15em;
         font-weight: 900;
     }
     .single-item h1 {

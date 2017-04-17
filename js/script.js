@@ -4,6 +4,16 @@ $(function() {
         $("*").removeClass('hidden');
         $("#title").addClass('hidden');
     });
+    // ---------hamburger-------------
+    $(".hamburger").on("click", function() {
+        event.preventDefault();
+        $("#mobile").removeClass("hide-nav");
+        $(".hamburger").on("click", function() {
+            $("#mobile").addClass("hide-nav");
+            //whenever you click on burger nav the drop-down menu will show
+        });
+    });
+
 
     // -----------desktop carousel------------------------
     $(".single-item").slick({
