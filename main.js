@@ -24,6 +24,19 @@ $(function() {
         }
     });
 
+    // hamburger nav
+    // in mobile, click on ham nav
+    // drop down list of menu items appears
+    // click item takes you to page
+    // click ham hides menu
+
+    $(".ham-nav").hide();
+
+    $(".hamburger").on("click", function(event) {
+        event.preventDefault();
+        $(".ham-nav").slideToggle();
+    });
+
     // testimonials
     // three quotes - each as a div
     // after xx seconds - switch to next div

@@ -46,16 +46,10 @@ p {
 }
 
 
-/* ================================== */
-
-
 /* ============= HEADER ============= */
 
-
-/* ================================== */
-
 header {
-    background-color: white;
+    background-color: #fff;
     display: flex;
     flex-direction: row;
     top: 0;
@@ -106,14 +100,26 @@ nav a:hover {
     color: #6899AE;
 }
 
+.hamburger {
+    display: none;
+}
 
-/* ===================================== */
+.ham-nav {
+    margin-top: 8em;
+}
+
+.ham-nav li {
+    padding: 10px;
+    list-style: none;
+    font-size: 30px;
+}
+
+.ham-nav a {
+    color: #6899AE;
+}
 
 
 /* ============= SLIDESHOW ============= */
-
-
-/* ===================================== */
 
 .container {
     margin: 0 auto;
@@ -128,13 +134,7 @@ nav a:hover {
 }
 
 
-/* ===================================== */
-
-
 /* =============== ABOUT =============== */
-
-
-/* ===================================== */
 
 #about {
     background-color: #fff;
@@ -166,13 +166,7 @@ nav a:hover {
 }
 
 
-/* ===================================== */
-
-
 /* ============ Testimonials ============ */
-
-
-/* ===================================== */
 
 #testimonials {
     background: url('../css/images/table-2.jpg');
@@ -198,13 +192,7 @@ nav a:hover {
 }
 
 
-/* ===================================== */
-
-
 /* ========== MAP & CONNECT ========== */
-
-
-/* ===================================== */
 
 #contact {
     background-color: #F2EFEF;
@@ -221,6 +209,9 @@ nav a:hover {
 #hpmap {
     width: 50%;
     padding-top: 20px;
+    border: 0;
+    border-radius: 0;
+    border-style: none;
 }
 
 #connect {
@@ -273,17 +264,11 @@ nav a:hover {
 }
 
 
-/* ===================================== */
-
-
 /* =========== CONTACT FORM ============ */
-
-
-/* ===================================== */
 
 footer {
     text-align: center;
-    color: white;
+    color: #fff;
     background-color: #6899AE;
     width: 100%;
     margin-top: 0;
@@ -292,7 +277,7 @@ footer {
 }
 
 .fa-angle-down {
-    color: white;
+    color: #fff;
 }
 
 #contact-form {
@@ -301,7 +286,7 @@ footer {
     justify-content: space-between;
     flex-wrap: wrap;
     width: 100%;
-    background-color: white;
+    background-color: #fff;
 }
 
 #intro {
@@ -368,12 +353,7 @@ label {
 }
 
 
-/* =====================================
-
-/* ============== EXPERIENCES =============== */
-
-
-/* ===================================== */
+/* ============== GALLERY =============== */
 
 #gallery {
     display: flex;
@@ -418,13 +398,7 @@ label {
 }
 
 
-/* ===================================== */
-
-
 /* =============== FAQ  ================ */
-
-
-/* ===================================== */
 
 #full-faq {
     width: 60%;
@@ -435,20 +409,104 @@ label {
 }
 
 
-/* =====================================
+/* ========= MEDIA QUERY : MAIN ================ */
 
-/* ============== ERRORS =============== */
-
-
-/* ===================================== */
-
-.form-error {
-    display: none;
-    color: #ED5254;
-    font-size: 14px;
-    width: 100%;
-    margin-top: 0;
+@media only screen and (max-width: 560px) {
+    p {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+    nav a {
+        display: none;
+    }
+    .main-nav-logo {
+        display: block;
+    }
+    .hamburger {
+        display: block;
+        font-size: 2em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+    #welcome {
+        width: 100%;
+    }
+    #faq {
+        width: 100%;
+    }
+    #faq ul {
+        margin-bottom: 3em;
+        font-size: 18px;
+    }
+    .to-faq {
+        padding: .5em;
+        font-size: 2em;
+        margin-left: 1em;
+        background-color: #6899AE;
+        color: #fff;
+        width: 100%;
+        margin: 0;
+    }
+    #testimonials {
+        display: none;
+    }
+    #contact {
+        display: flex;
+        flex-direction: column;
+    }
+    #hpmap {
+        width: 100%;
+    }
+    #connect {
+        width: 100%;
+    }
+    #connect p {
+        line-height: 30px;
+    }
+    #logos {
+        flex-direction: column;
+        margin-bottom: 2em;
+    }
+    .other-logos {
+        width: 80%;
+    }
+    /*  MEDIA QUERY : FAQ  */
+    #full-faq {
+        margin: 0;
+        margin-top: 9em;
+        padding: 0 .5em;
+        width: 100%;
+    }
+    #full-faq ul {
+        font-size: 18px;
+        line-height: 26px;
+        margin-left: -1em;
+    }
+    /*  MEDIA QUERY : GALLERY  */
+    #gallery {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .galleryimg1,
+    .galleryimg2,
+    .galleryimg3 {
+        width: 90%;
+    }
 }
+
+
+/* =============== IMPORTANT ================ */
 
 .hidden {
     display: none !important;
