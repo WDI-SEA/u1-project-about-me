@@ -12,7 +12,7 @@ $(function() {
     //===hamburger
     //===Why won't this work???
     $('.hamburger').click(function() {
-        $('.hamburgerNav').css('display', 'visible');
+        $('.hamburgerNav').show();
     });
     //===contactForm
     var inputBox = $('.inputBox');
