@@ -269,12 +269,8 @@ textarea {
     background-color: #495d69;
     color: white;
     border-style: none;
-    border: 1px solid #495d69;
+    border: 1px solid transparent;
     padding: 1em 0;
-}
-
-.error {
-    border: 2px solid #green;
 }
 
 .errorMsg {
@@ -384,7 +380,6 @@ footer {
         border: 1px solid transparent;
         box-sizing: border-box;
         overflow: auto;
-        /*border was: #495d69;*/
     }
     textarea {
         width: 100%;
@@ -400,17 +395,9 @@ footer {
         width: 80%;
     }
     #submitButt {
-        /*background-color: #495d69;
-    color: white;
-    border-style: none;
-    order: 1px solid #495d69;*/
         padding: .6em 0;
     }
     #submitButt:hover {
-        /*background-color: #495d69;
-    color: white;
-    border-style: none;
-    order: 1px solid #495d69;*/
         padding: .6em 0;
     }
     footer {
@@ -420,7 +407,6 @@ footer {
     #icons {
         width: 51%;
         margin: 0 auto;
-        /*    display: flex;*/
         justify-content: space-around;
         font-size: 3em;
         padding: 5% 0;
