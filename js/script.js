@@ -59,6 +59,7 @@ $(function() {
 });
 
 // ----------Scrolling Quotes--------------
+/*referenced online website to give the Testimonails section functionality*/
 
 function scrollQuote() { //this function declares the scrolling feature in Testimonials section
 
