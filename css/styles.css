@@ -106,16 +106,26 @@ nav a:hover {
 
 .ham-nav {
     margin-top: 8em;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
 }
 
 .ham-nav li {
-    padding: 10px;
+    background-color: #6899AE;
+    margin-top: 3em;
+    padding-top: 2em;
+    padding-bottom: 2em;
     list-style: none;
-    font-size: 30px;
+    text-align: center;
+    margin-left: -1em;
+    padding-left: 0;
 }
 
 .ham-nav a {
-    color: #6899AE;
+    color: #fff;
+    font-size: 30px;
+    padding-left: 0;
 }
 
 
@@ -442,10 +452,6 @@ label {
     #faq {
         width: 100%;
     }
-    #faq ul {
-        margin-bottom: 3em;
-        font-size: 18px;
-    }
     .to-faq {
         padding: .5em;
         font-size: 2em;
@@ -463,10 +469,15 @@ label {
         flex-direction: column;
     }
     #hpmap {
-        width: 100%;
+        display: none;
     }
     #connect {
+        padding-left: 3%;
+        padding-right: 3%;
         width: 100%;
+    }
+    #social {
+        justify-content: space-around;
     }
     #connect p {
         line-height: 30px;
@@ -502,6 +513,52 @@ label {
     .galleryimg2,
     .galleryimg3 {
         width: 90%;
+    }
+}
+
+@media only screen and (max-width: 775px) {
+    #about {
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+    #faq ul {
+        margin-bottom: 3em;
+        font-size: 18px;
+    }
+    .to-faq {
+        font-size: 20px;
+    }
+    .quote {
+        display: none;
+        box-sizing: border-box;
+        text-align: center;
+        width: 80%;
+        align-self: center;
+        font-size: 25px;
+        font-style: italic;
+        line-height: 30px;
+    }
+    #contact {
+        padding-left: 1%;
+        padding-right: 1%;
+        justify-content: space-between;
+    }
+    .form {
+        display: flex;
+        box-sizing: border-box;
+        flex-direction: column;
+        width: 80%;
+        align-self: center;
+        flex-wrap: wrap;
+        font-size: 18px;
+    }
+    .form-section {
+        width: 100%;
+    }
+    .basic-form,
+    #type-of-services,
+    #type-of-event {
+        margin-bottom: 1em;
     }
 }
 

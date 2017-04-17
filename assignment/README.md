@@ -18,7 +18,7 @@ Your work must:
 
 x Use semantic markup for HTML and CSS, adhering to best practices.
 x Use Flexbox to create a multi-column layout.
-- Be completely responsive.
+ALMOST - MAP! x Be completely responsive.
 x Include separate HTML/CSS /JavaScript files.
 - Stick with the KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles.
 x Use JavaScript or jQuery for DOM manipulation.
