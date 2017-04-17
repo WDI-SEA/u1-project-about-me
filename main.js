@@ -4,10 +4,16 @@ $(function() {
     // when user clicks dot, go to the photo assigned to that dot in the slideshow
     // when user hovers on dot(or clicks ? ? ), effect of some kind
 
+    $(".main-photos").slick({
+        dots: true
+    });
+
+
     // navigation
     // if link in header is clicked, slowly scroll to that place on the homepage
     // need to "animate" body to slide down
     // //css?
+
     $('a[href*="#"]:not([href="#"])').click(function() {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
             var target = $(this.hash);
@@ -79,7 +85,5 @@ $(function() {
             scrollTop: $("#intro").offset().top
         }, 1500);
     });
-
-    $('selector').slippry();
 
 });
