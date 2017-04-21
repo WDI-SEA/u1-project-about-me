@@ -104,23 +104,19 @@ nav a:hover {
 .ham-nav {
     margin-top: 8em;
     padding: 0;
-    height: 100vh;
-    width: 100vw;
+    margin-bottom: 0;
 }
 
 .ham-nav li {
-    background-color: #6899AE;
-    margin-top: 3em;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    background-color: #fff;
     list-style: none;
-    text-align: center;
-    margin-left: -1em;
-    padding-left: 0;
+    text-align: left;
+    padding-bottom: 1em;
+    padding-left: 1em;
 }
 
 .ham-nav a {
-    color: #fff;
+    color: #0B0908;
     font-size: 30px;
     padding-left: 0;
 }
@@ -200,19 +196,20 @@ nav a:hover {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-bottom: 1em;
+    justify-content: space-between;
+    padding-right: 15%;
     font-size: 16px;
 }
 
 #hpmap {
-    width: 50%;
-    padding-top: 20px;
+    background-image: url(https://maps.googleapis.com/maps/api/staticmap?center=415+Westlake&zoom=15&scale=false&size=640x500&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0x6c9dc6%7Clabel:%7C415+Westlake);
+    width: 60%;
+    max-width: 640px;
     border: 0;
     border-radius: 0;
     border-style: none;
+    background: cover;
+    background-repeat: none;
 }
 
 #connect {
@@ -220,8 +217,8 @@ nav a:hover {
     color: #0B0908;
     display: flex;
     flex-direction: column;
-    align-content: center;
     flex-wrap: wrap;
+    padding-bottom: 2em;
 }
 
 #social {
@@ -231,7 +228,7 @@ nav a:hover {
 }
 
 .fa {
-    font-size: 40px;
+    font-size: 35px;
     color: #6899AE;
 }
 
@@ -241,14 +238,18 @@ nav a:hover {
 
 #connect p {
     line-height: 22px;
-    margin-top: 2em;
-    border-top: 1px solid #715956;
     padding-top: 2em;
     margin-bottom: 0;
 }
 
 #logos {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.other-logos {
+    width: 90%;
 }
 
 .other-logos img {
@@ -401,6 +402,23 @@ label {
 }
 
 
+/* =========== LOCATION ============ */
+
+#location-map {
+    width: 100%;
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-top: 8em;
+    margin-bottom: 7em;
+}
+
+#location-map iframe {
+    border-style: none;
+    border: 0;
+    border-radius: 0;
+}
+
+
 /* ========= MEDIA QUERY : MAIN ================ */
 
 @media only screen and (max-width: 560px) {
@@ -417,12 +435,16 @@ label {
     }
     .main-nav-logo {
         display: block;
+        float: right;
     }
     .hamburger {
         display: block;
         font-size: 2em;
         padding-top: 1em;
         padding-bottom: 1em;
+    }
+    .container {
+        margin-top: 3em;
     }
     #about {
         display: flex;
@@ -460,16 +482,23 @@ label {
     }
     #social {
         justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    #social.fa {
+        width: 50%;
+        font-size: 70px;
     }
     #connect p {
         line-height: 30px;
     }
     #logos {
         flex-direction: column;
-        margin-bottom: 2em;
+        margin-top: 3em;
+        margin-bottom: 3em;
+        align-items: center;
     }
     .other-logos {
-        width: 80%;
+        width: 90%;
     }
     /*  MEDIA QUERY : FAQ  */
     #full-faq {
