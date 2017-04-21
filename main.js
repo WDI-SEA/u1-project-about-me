@@ -40,6 +40,7 @@ $(function() {
     // testimonials
     // three quotes - each as a div
     // after xx seconds - switch to next div
+
     var newQuote = $(".quote");
     var quoteIndex = -1;
 

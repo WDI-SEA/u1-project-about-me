@@ -11,10 +11,10 @@ Technologies used.
 Your process/approach.
 - I started with a few wireframing drafts on both a whiteboard and in a notebook, along with a few notes about organization and content of pages
 - Created a priority list of what should be updated first when it came to extras (links, effects, etc), along with a "to-do" for each day we had to work on the project. At the beginning of each day I reassessed what still needed to be done.
+- Brainstormed what I used to look for on event venue websites when I was an Event Planner. Kept these details in mind when constructing the heirarchy of the site.
 - Started with the homepage HTML and CSS. Once those were complete, I moved onto creating additional pages.
 - For JS/jQuery, researched techniques, looking for the best solutions that fit our level of knowledge with the language.
 - Worked in the lounge after class each day with some of my cohort, helping each other problem solve when we were all stuck on the same problem. Great minds think alike, and also miss semi-colons occasionally.
-
 - Ended with Media Queries, once all CSS for desktop was final.
 
 

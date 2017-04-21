@@ -20,11 +20,11 @@ x Use semantic markup for HTML and CSS, adhering to best practices.
 x Use Flexbox to create a multi-column layout.
 ALMOST - MAP! x Be completely responsive.
 x Include separate HTML/CSS /JavaScript files.
-- Stick with the KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles.
+x Stick with the KISS (Keep It Simple Stupid) and DRY (Don't Repeat Yourself) principles.
 x Use JavaScript or jQuery for DOM manipulation.
 x Be deployed and accessible online. (Research and use GitHub Pages)
-- Contain no "dead" code
-- Your code must pass our validators with flying colors
+x Contain no "dead" code
+x Your code must pass our validators with flying colors
 
 
 ---
@@ -34,7 +34,7 @@ x Be deployed and accessible online. (Research and use GitHub Pages)
 x A working site, built by you, hosted somewhere on the internet.
 x A Git repository, hosted on GitHub, that includes a link to your hosted site and frequent commits dating back to the beginning of the project.
 x Any pseudo code you created. Either have it in the `.js` file, or in a separate file
-- A `README.md` file with explanations of:
+x A `README.md` file with explanations of:
   - Technologies used.
   - Your process/approach.
   - Unsolved problems.
