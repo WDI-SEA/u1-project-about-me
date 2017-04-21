@@ -27,8 +27,7 @@ body {
 
 #headerimage {
     background-image: url("../images/header_image.jpg");
-    /*height: 30em;*/
-    height: auto;
+    height: 30em;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -37,7 +36,6 @@ body {
     align-items: center;
     margin: 1em 0 0 0;
     background-attachment: fixed;
-    max-width: 100%;
 }
 
 .header h2 {
