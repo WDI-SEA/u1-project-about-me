@@ -27,7 +27,8 @@ body {
 
 #headerimage {
     background-image: url("../images/header_image.jpg");
-    height: 30em;
+    /*height: 30em;*/
+    height: auto;
     background-position: center;
     background-size: cover;
     display: flex;
@@ -36,6 +37,7 @@ body {
     align-items: center;
     margin: 1em 0 0 0;
     background-attachment: fixed;
+    max-width: 100%;
 }
 
 .header h2 {
@@ -234,7 +236,7 @@ img {
 
 #comment-form input {
     font-size: 1em;
-    /*  margin: 1em 0;*/
+    /* margin: .5em 0;*/
     border: black .2em solid;
     text-transform: uppercase;
     padding: 1.25em 0.63em;
@@ -244,7 +246,7 @@ img {
 #comment-form textarea,
 #comment-form button {
     font-size: 1.25em;
-    /*   margin: 0.63em;*/
+    margin: 0.5em;
     background-color: white;
     border: black .15em solid;
     text-transform: uppercase;
@@ -513,7 +515,7 @@ span {
     }
     #comment-form {
         margin: 0 auto;
-        padding: 15px 50px 0 50px;
+        /*padding: 15px 50px 0 50px;*/
     }
 }
 

@@ -4,6 +4,8 @@ $(function() {
     $("#title").on("mouseover", function() {
         $("*").removeClass('hidden');
         $("#title").addClass('hidden');
+
+
     });
     // ---------hamburger-------------
     $(".hamburger").on("click", function() {
