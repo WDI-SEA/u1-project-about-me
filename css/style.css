@@ -1,0 +1,343 @@
+    /*****Entire Page*******/
+    
+    html body {
+        width: 100%;
+        height: 100%;
+    }
+    
+    body {
+        padding: 0;
+        margin: 0;
+        border: 0;
+        font-family: 'Raleway', sans-serif;
+        line-height: 1;
+    }
+    
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    /********Header **************/
+    
+    .flex-container nav {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    
+    li {
+        padding: 25px;
+    }
+    
+    a {
+        text-decoration: none;
+        color: gray;
+    }
+    
+    ul {
+        color: #eee;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 18px;
+        padding: 5px;
+        list-style: none;
+        display: flex;
+    }
+    
+    h1 {
+        margin-left: 30px;
+    }
+    
+    .nav-bar {
+        background: white;
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin: 0 auto;
+        position: fixed;
+        z-index: 110;
+        padding: 20px;
+    }
+    
+    .nav-bar img {
+        width: 30%;
+        margin: 10px;
+        margin-top: 10px;
+    }
+    
+    .nav-bar img {
+        height: 100px;
+        width: 300px;
+    }
+    
+    .nav_bar ul {
+        display: flex;
+        text-decoration: none;
+    }
+    
+    header a:hover {
+        color: black;
+        font-weight: bold;
+    }
+    
+    .menu-icon {
+        display: hidden;
+        width: 40px;
+        height: 40px;
+    }
+    
+    #menu-icon a:hover {
+        border-radius: 4px 4px 0 0;
+    }
+    /**********IT'S ME Image Section*****************/
+    
+    .flex-container-1 h1 {
+        text-align: center;
+        color: black;
+        font-size: 50px;
+    }
+    
+    .flex-container-1 h3 {
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .label {
+        padding-bottom: 45px;
+        padding-top: 45px;
+        background-image: url('../images/whistler.jpg');
+        background-size: cover;
+        height: 500px;
+        margin-top: 100px;
+    }
+    
+    .aboutMe {
+        background-color: lightgray;
+    }
+    /*************ABOUT ME Article********************/
+    
+    .flex-container-2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        height: 300px;
+    }
+    
+    .imagebox {
+        display: flex;
+    }
+    
+    .imagebox img {
+        border-radius: 80%;
+        padding: 9px;
+        width: 200px;
+        margin-left: 40px;
+        border: 5px solid gray;
+        height: 200px;
+    }
+    
+    img {
+        margin: 0 auto;
+        width: 50%;
+    }
+    
+    .name {
+        margin-top: 20px;
+        background-color: lightgray;
+        color: #000000;
+        text-align: center;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        padding-top: 20px;
+    }
+    
+    .imagebox p {
+        display: flex;
+        padding-left: 50px;
+        padding-bottom: 200px;
+        width: 75%;
+    }
+    
+    .aboutMe {
+        padding-top: 10px;
+    }
+    /***********SLIDE Section************************/
+    
+    .slider {
+        margin: 0 auto;
+        padding: 40px;
+        width: 80%;
+        z-index: 100;
+    }
+    /**********PORTFOLIO Section*************/
+    
+    .boxes .container-holder {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .wrapper2 h3 {
+        text-align: center;
+        margin-top: 50px;
+        /* margin-bottom: 50px;*/
+        letter-spacing: 10px;
+        /* border-bottom: 10px solid #eee;*/
+    }
+    
+    .boxes .box {
+        width: 33%;
+        padding: 20px;
+        text-align: center;
+        height: 100%;
+    }
+    
+    .boxes p {
+        font-size: 10px;
+        display: flex;
+    }
+    
+    .read input {
+        text-align: center;
+        border-color: #000000;
+    }
+    
+    .container-slider {
+        background-color: lightslategray;
+    }
+    /********Light Box**********************/
+    
+    #light-box {
+        position: fixed;
+    }
+    /*************Testimonial****************/
+    
+    .wrapper3 h3 {
+        letter-spacing: 10px;
+        text-align: center;
+    }
+    /*.testimonial {
+    max-width: 100%;
+    text-align: center;
+}
+*/
+    
+    .wrapper3 {
+        background-color: lightslategray;
+        height: 300px;
+    }
+    
+    .say {
+        padding-top: 50px;
+    }
+    
+    .wrapper3 p {
+        width: 50%;
+        margin: 0 auto;
+    }
+    /*******CONTACT ME Section*******************/
+    
+    .container-form {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+        height: 200px;
+        padding-left: 35px;
+    }
+    
+    .wrapper4 h3 p {
+        display: flex;
+    }
+    
+    .wrapper4 p {
+        padding-top: 60px;
+        margin-left: 45px;
+    }
+    /***************FORM Section*********************/
+    
+    aside#sidebar {
+        /*float: right;*/
+        /*width: 25%;*/
+        margin-top: 10px;
+        margin-left: 25px;
+        display: flex;
+        background-color: lightgray;
+        height: 170px;
+        border-radius: 55px;
+        padding: 40px 55px 0;
+        font-size: 30px;
+    }
+    
+    .dark {
+        display: flex;
+    }
+    
+    .contactMe {
+        font-size: 10px;
+    }
+    
+    .dark h3 {
+        margin-top: -1px;
+    }
+    
+    aside#sidebar .contactMe input,
+    aside#sidebar .contactMe textarea {
+        padding: 5px;
+        padding-bottom: 1px;
+        display: flex;
+    }
+    
+    .button_1:hover {
+        background-color: red;
+        color: white;
+    }
+    /*************Footer****************/
+    
+    .copyright {
+        border-top: solid 2px gray;
+        padding: 15px;
+        margin-left: 430px;
+        margin: 0 auto;
+        font-size: 10px;
+        width: 100%;
+    }
+    /************Media Query**************/
+    
+    @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+        header nav,
+        .wrapper {
+            width: auto;
+            flex-direction: column;
+        }
+        .nav-bar ul {
+            margin-top: -50px;
+        }
+        .nav-bar {
+            margin-left: -10px;
+        }
+        .wrapper {
+            padding-top: 100px;
+            width: 500px;
+        }
+        .aboutMe,
+        .wrapper3,
+        .container-slider {
+            width: 500px;
+        }
+        .aboutMe {
+            height: 500px;
+        }
+        .container-form {
+            margin-left: -75px;
+        }
+        .dark h3 {
+            font-size: 20px;
+            padding-right: 20px;
+            margin-left: -35px;
+        }
+        #sidebar {
+            padding-bottom: 0;
+        }
+    }
