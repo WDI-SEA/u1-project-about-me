@@ -66,36 +66,15 @@ $(function() {
         //get the clicked image src of the image to be displayed
         var imageSrc = $(this).attr("src");
 
-        /*
-        If the lightbox window HTML already exists in document,
-        change the img src to to match the src of whatever image was clicked
+        // Change the img src to to match the src of whatever image was clicked
+        // insert img tag with clicked image's src as src value
+        $('#content').html('<img src="' + imageSrc + '">');
 
-        If the lightbox window HTML doesn't exist, create it and insert it.
-        (This will only happen the first time the lightbox is displayed)
-        */
-        if ($('#lightbox').length > 0) { // the #lightbox exists
-
-            //insert img tag with clicked image's src as src value
-            $('#content').html('<img src="' + imageSrc + '" />');
-
-        } else { // the #lightbox does not exist
-
-            //create HTML markup for lightbox window dynamically
-            var lightbox =
-                '<div id="lightbox">' +
-                '<p>Click window to close</p>' +
-                '<div id="content">' + //insert clicked link's href into img src
-                '<img src="' + imageSrc + '" />' +
-                '</div>' +
-                '</div>';
-            //insert lightbox HTML into the body
-            $('body').append(lightbox);
-        }
         // keep the image smaller than the current screen height
         var maxHeight = $('#lightbox').height() - 65;
         $("#lightbox img").css("max-height", maxHeight + "px");
 
-        //show lightbox window to the user
+        // show lightbox window to the user
         $('#lightbox').fadeIn(400);
     });
 
@@ -120,12 +99,14 @@ $(function() {
         $(".edited-element").each(function() {
             if ($(this).val()) {
                 // value is non-blank
-                $(this).removeClass("error");
-                $(this).siblings().hide();
+                $(this)
+                    .removeClass("error")
+                    .siblings().hide();
             } else {
                 // value is blank
-                $(this).addClass("error");
-                $(this).siblings().fadeIn(1000);
+                $(this)
+                    .addClass("error")
+                    .siblings().fadeIn(1000);
             }
         });
     });

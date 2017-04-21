@@ -324,6 +324,7 @@ footer p {
     text-align: center;
     /*display the lightbox in front of all other elements*/
     z-index: 1000000;
+    /*hide the lightbox until it is activated by the user's clicking the slide*/
     display: none;
 }
 
