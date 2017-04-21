@@ -233,7 +233,8 @@ img {
 }
 
 #comment-form input {
-    margin: 1.25em 0;
+    font-size: 1em;
+    /*  margin: 1em 0;*/
     border: black .2em solid;
     text-transform: uppercase;
     padding: 1.25em 0.63em;
@@ -242,9 +243,10 @@ img {
 
 #comment-form textarea,
 #comment-form button {
-    margin: 0.63em;
+    font-size: 1.25em;
+    /*   margin: 0.63em;*/
     background-color: white;
-    border: black .2em solid;
+    border: black .15em solid;
     text-transform: uppercase;
     padding: 1.25em 0.63em;
 }
@@ -266,7 +268,7 @@ img {
 }
 
 .col-1-2 {
-    width: 20%;
+    width: 30%;
 }
 
 
