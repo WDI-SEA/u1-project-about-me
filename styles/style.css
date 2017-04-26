@@ -16,18 +16,12 @@ nav {
 }
 
 .checkBar {
-    background-image: url("images/checkRed.svg");
+    background-image: url("../images/checkRed.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     width: 100%;
     height: 110px;
-}
-
-.hamburger {
-    font-size: 6em;
-    display: none;
-    color: #fff;
 }
 
 .hamburgerNav {
@@ -319,7 +313,7 @@ footer {
 /*MediaQuery===========*/
 
 @media (max-width: 560px) {
-    .hamburger {
+    .burger {
         font-size: 4em;
         position: fixed;
         display: block;
@@ -335,7 +329,8 @@ footer {
         flex-wrap: wrap;
         width: 30%;
         background-color: white;
-        display: none;
+        /*display: none;
+*/
     }
     .hamburgerNav a {
         color: #849fb0;

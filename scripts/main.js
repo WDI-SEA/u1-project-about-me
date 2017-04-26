@@ -11,9 +11,8 @@ $(function() {
 
     //===hamburger
     //===Why won't this work???
-    $('.hamburger').on('click', function(event) {
-        event.preventDefault();
-        $('.hamburgerNav').slideToggle();
+    $('#hamburger').on('click', function() {
+        $('#navUL').slideToggle();
     });
     //===contactForm
     var inputBox = $('.inputBox');
