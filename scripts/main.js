@@ -10,10 +10,16 @@ $(function() {
     });
 
     //===hamburger
-    //===Why won't this work???
     $('#hamburger').on('click', function() {
         $('#navUL').slideToggle();
     });
+    $('#navUL li a').on('click', function() {
+        if (window.innerWidth < 561) {
+            $('#navUL').slideToggle();
+        }
+    });
+
+
     //===contactForm
     var inputBox = $('.inputBox');
 

@@ -312,6 +312,12 @@ footer {
 
 /*MediaQuery===========*/
 
+@media (min-width: 561px) {
+    #navUL {
+        display: flex !important;
+    }
+}
+
 @media (max-width: 560px) {
     .burger {
         font-size: 4em;
@@ -337,6 +343,9 @@ footer {
     }
     #navUL {
         display: none;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-left: .3em;
     }
     .navULMargin {
         background-color: transparent;
