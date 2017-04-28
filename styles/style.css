@@ -345,7 +345,7 @@ footer {
         display: none;
         flex-wrap: wrap;
         width: 100%;
-        margin-left: .3em;
+        padding-left: 2em;
     }
     .navULMargin {
         background-color: transparent;
@@ -366,6 +366,9 @@ footer {
         letter-spacing: 0em;
         text-decoration: none;
         text-transform: uppercase;
+    }
+    .superQuotes {
+        width: 90%;
     }
     .threeBy1 {
         display: flex;
