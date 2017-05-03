@@ -37,7 +37,17 @@ $(function() {
         });
     });
 
+    scrollQuote();
 
+    // ------------------jump to section of page slowly using navone links---------------------------
+    //jQuery finds links in HTML document and fires event to slowdown speed that it takes for page to jump to section.
+    $('.navone a').on('click', function(event) {
+        event.preventDefault();
+
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top //hey, jQuery find this attribute link and tells it to 
+        }, 500); //go this speed
+    });
 });
 
 // ----------Scrolling Quotes--------------
@@ -62,18 +72,3 @@ function scrollQuote() { //this function declares the scrolling feature in Testi
     setTimeout(selectNextQuote, $quotes.filter(":first").data("timeout"));
 
 }
-
-$(function() {
-    scrollQuote();
-});
-
-
-// ------------------jump to section of page slowly using navone links---------------------------
-//jQuery finds links in HTML document and fires event to slowdown speed that it takes for page to jump to section.
-$('navone').on('click', function(event) {
-    event.preventDefault();
-
-    $('html, body').animate({
-        scrollTop: $($.attr(this, 'href')).offset().top //hey, jQuery find this attribute link and tells it to 
-    }, 500); //go this speed
-});
