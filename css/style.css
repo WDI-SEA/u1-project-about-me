@@ -1,520 +1,490 @@
- html,
- body {
-     max-width: 100%;
-     overflow-x: hidden;
- }
- 
- body {
-     font-family: "Raleway", sans-serif;
-     color: #44545E;
- }
- /*--------------------------start page---------------------------*/
- 
- #title {
-     position: absolute;
-     margin: auto;
-     top: 0;
-     right: 0;
-     bottom: 0;
-     left: 0;
-     width: 400px;
-     height: 91px;
-     display: inline-block;
- }
- 
- .hidden {
-     display: none !important;
- }
- /*--------------------------header---------------------------*/
- 
- #headerimage {
-     background-image: url("../images/header_image.jpg");
-     width: 100%;
-     height: 30em;
-     background-position: center;
-     background-size: cover;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: center;
-     margin: 1em 0 0 0;
-     background-attachment: fixed;
- }
- 
- .header h2 {
-     font-weight: 400;
-     font-size: 1.75em;
- }
- 
- #nav {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     margin-bottom: 1.56em;
- }
- 
- .navone {
-     font-size: 16px;
-     font-weight: bold;
-     text-transform: uppercase;
-     width: 56.25em;
-     margin: 0 auto;
- }
- 
- .navone a {
-     color: black;
-     text-decoration: none;
- }
- 
- .navone ul {
-     font-weight: bold;
-     list-style: none;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
- }
- 
- .hamburger {
-     display: none;
- }
- 
- a:hover {
-     text-decoration: underline;
-     -webkit-transition-duration: 0.4s;
-     transition: width 2s;
- }
- 
- .navtwo {
-     font-family: 'Lato', sans-serif;
-     text-align: center;
-     max-width: 18.75em;
-     margin: 0 auto;
- }
- 
- .navtwo ul {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     margin-bottom: 1.56em;
- }
- 
- .navtwo li {
-     font-size: 2em;
-     font-weight: 400;
-     list-style: none;
-     padding: 0 20px;
- }
- 
- .navtwo a {
-     color: black;
- }
- 
- h1 {
-     color: black;
-     font-size: 2em;
-     font-weight: 600;
-     text-align: center;
-     text-transform: uppercase;
-     letter-spacing: 0.63em
- }
- 
- h2 {
-     font-size: 2em;
-     text-transform: uppercase;
-     font-weight: 600;
-     text-align: center;
-     color: black;
- }
- 
- h3 {
-     color: black;
-     font-size: .5em;
-     text-align: center;
- }
- 
- p {
-     color: white;
-     font-family: 'Lato', sans-serif;
-     font-size: .8em;
-     text-align: center;
- }
- /*----------------Slick: Work--------------------------------------*/
- 
- .main {
-     background-color: black;
-     color: white;
- }
- 
- .container {
-     margin: 0 auto;
-     padding: 40px;
-     width: 80%;
-     color: white;
-     background: black;
- }
- 
- img {
-     max-width: 100%;
-     height: auto;
- }
- 
- h3 img {
-     width: 100%;
-     height: 600px;
-     align-content: center;
- }
- 
- .work h3 {
-     color: white;
-     font-size: 1em;
- }
- 
- .carousel h1 {
-     color: white;
-     padding: 50px 0 0 0;
-     font-weight: 700;
- }
- /*---------------------Experience: Beyond the Code------------*/
- 
- .experience {
-     background-color: white;
-     display: flex;
-     flex-direction: row;
-     justify-content: space-between;
-     flex-wrap: wrap;
-     padding: 60px 50px 80px 50px;
- }
- 
- .experience h3 {
-     color: white;
-     font-size: 1.75em;
-     font-weight: 800;
- }
- 
- .experience p {
-     color: white;
-     font-size: 1em;
-     text-transform: none;
-     text-align: center;
-     padding: 40px 30px 20px 30px;
- }
- 
- .logo {
-     text-align: center;
-     padding: 50px 0 50px 0;
-     position: relative;
- }
- 
- .text {
-     position: absolute;
-     top: 0px;
-     background-color: rgba(0, 0, 0, 0.7);
- }
- 
- .hide {
-     opacity: 0;
- }
- 
- .hide:hover {
-     opacity: 1;
-     transition: opacity 3s;
-     height: 100%;
- }
- /*------------------------comment form----------------------------*/
- 
- .wrap h2 {
-     text-align: center;
-     padding: 80px 0 65px 0;
- }
- 
- #comment-form {
-     display: flex;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     padding: 0px 50px 0 50px;
- }
- 
- #comment-form input {
-     font-size: 1em;
-     /* margin: .5em 0;*/
-     border: black .2em solid;
-     text-transform: uppercase;
-     padding: 1.25em 0.63em;
-     box-sizing: border-box;
- }
- 
- #comment-form textarea,
- #comment-form button {
-     font-size: 1.25em;
-     margin: 0.5em;
-     background-color: white;
-     border: black .15em solid;
-     text-transform: uppercase;
-     padding: 1.25em 0.63em;
- }
- 
- #comment-form button:hover {
-     color: white;
-     background-color: black;
-     transition: width 2s;
- }
- 
- .col-1-3 {
-     width: 30%;
- }
- 
- .col-3-3 {
-     width: 100%;
-     box-sizing: border-box;
-     margin: 0 auto;
- }
- 
- .col-1-2 {
-     width: 30%;
- }
- /*Comment Form: use this class using jQuery if a field is left blank*/
- 
- .error {
-     border: 2px solid #ED5254 !important;
- }
- 
- span {
-     color: #ED5254;
-     opacity: 0.5;
-     display: none;
-     font-size: 10px;
-     text-align: left;
- }
- /*-----------Tesrtionials: scrolling quotes-------------------*/
- 
- .aside {
-     color: white;
-     text-align: left;
-     font-size: 26px;
-     font-weight: bold;
-     background-color: black;
-     padding: 3em;
- }
- 
- .aside h2 {
-     font-size: 1.25em;
-     color: white;
-     padding: 40px 0 0 0;
- }
- /*referenced online website to style the Testimonails section*/
- 
- .cust-quotes {
-     height: 200px;
-     position: relative;
-     text-align: center;
-     background-color: black;
- }
- 
- .cust-quotes blockquote {
-     position: absolute;
-     bottom: 0px;
-     left: 0px;
-     right: 0px;
-     font-size: 14px;
-     text-align: center;
-     opacity: 0;
-     z-index: 0;
-     transition: opacity 0.5s ease-out 0s, transform 3s ease-in 0s;
- }
- 
- .cust-quotes blockquote:first-child {
-     opacity: 0;
-     transform: translateY(-10px) scale(1.1);
- }
- 
- .cust-quotes blockquote:first-child + blockquote {
-     opacity: 1;
-     z-index: 1;
-     transition: opacity 1.6s ease 0s;
- }
- 
- .cust-quotes blockquote p {
-     font-size: 24px;
-     font-weight: normal;
-     font-style: italic;
-     color: #FFFFFF;
-     line-height: 30px;
-     margin-bottom: 10px;
- }
- 
- .cust-quotes blockquote p:before {
-     content: '\201C';
- }
- 
- .cust-quotes blockquote p:after {
-     content: '\201D';
- }
- 
- .cust-quotes blockquote cite {
-     text-align: center;
-     font-size: 14px;
-     color: #898989;
- }
- 
- .cust-quotes blockquote cite a {
-     font-size: 14px;
-     font-weight: normal;
- }
- 
- .container {
-     max-width: 1300px;
- }
- /*--------------------------footer---------------------------*/
- 
- .navthree {
-     font-family: 'Lato', sans-serif;
-     text-align: center;
-     max-width: 18.75em;
-     margin: 0 auto;
- }
- 
- .navthree ul {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-around;
-     margin-bottom: 1.56em;
- }
- 
- .navthree li {
-     font-size: 2.5em;
-     font-weight: 400;
-     list-style: none;
-     padding: 0 20px;
- }
- 
- .navthree a {
-     color: gray;
-     text-align: center;
- }
- 
- .footer p {
-     color: gray;
-     font-size: 1em;
-     padding: 2.5em 0;
- }
- 
- .footer {
-     text-align: center;
-     text-transform: uppercase;
-     font-size: 0.75em;
-     font-weight: bold;
-     background-color: white;
-     /*  min-height: 6.25em;*/
-     padding-top: 1.25em;
- }
- /*--------------------------@mediaQuery---------------------------*/
- 
- @media (max-width: 600px) {
-     /*----------MOBILE-----------*/
-     .hamburger {
-         display: block;
-         position: absolute;
-         top: 0.1;
-         left: 0.1;
-         font-size: 2em;
-         color: black;
-     }
-     /*-------BODY------------*/
-     html {
-         font-size: .5em;
-         background-color: rgba(133, 4, 64, 0);
-     }
-     h2 {
-         font-size: 2em;
-         font-weight: 600;
-     }
-     h1 {
-         font-size: 2.15em;
-         font-weight: 900;
-     }
-     #hide:hover {
-         height: 80%;
-     }
-     /*  --------NAV-------------------*/
-     .hide-nav {
-         display: none;
-     }
-     .navone ul {
-         display: flex;
-         flex-direction: column;
-     }
-     .navone li {
-         font-size: 1em;
-         padding: 10px;
-     }
-     .navtwo {
-         text-align: center;
-         max-width: 10em;
-         margin: 0 auto;
-     }
-     .navtwo ul {
-         display: flex;
-         flex-direction: column;
-         justify-content: space-around;
-     }
-     .navtwo li {
-         font-size: 1.5em;
-         padding: 0px 17px;
-         justify-content: center;
-     }
-     /*--------WORK----------*/
-     .col-1-3 {
-         width: 100%;
-     }
-     .main h2 {
-         font-size: 3.5em;
-         padding: 30px 0 0 0;
-     }
-     .carousel h1 {
-         color: white;
-         padding: 50px 0 0 0;
-         font-weight: 700;
-         font-size: 9px;
-     }
-     h3 img {
-         width: 100%;
-         height: auto;
-         align-content: center;
-     }
-     /*------EXPERIENCE----------*/
-     .experience {
-         justify-content: space-between;
-         padding: 0 10px 0px 10px;
-     }
-     .experience p {
-         padding: 40px 30px 20px 30px;
-         font-size: 2em;
-     }
-     /*----------TESTIMONIALS---------------*/
-     .aside {
-         font-size: 14px;
-     }
-     .aside h2 {
-         font-size: 1.5em;
-         color: white;
-         padding: 0 0 35px 0;
-     }
-     .bq_quote p {
-         font-size: .75em;
-     }
-     .cust-quotes blockquote p {
-         font-size: 14px;
-         line-height: 20px;
-         margin-top: 20px;
-     }
-     /*----------FORM--------------*/
-     #comment-form {
-         margin: 0 auto;
-         /*padding: 15px 50px 0 50px;*/
-     }
-     .wrap h2 {
-         text-align: center;
-         padding: 10px 0 5px 0;
-     }
- }
- /*---------------end mobile responsive @media query-------------*/
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    color: #44545E;
+}
+
+
+/*--------------------------start page---------------------------*/
+
+#title {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 91px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#title h2 {
+    font-size: 20vw;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/*--------------------------header---------------------------*/
+
+#headerimage {
+    background-image: url("../images/header_image.jpg");
+    width: 100%;
+    height: 30em;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.header h2 {
+    font-weight: 400;
+    font-size: 1.75em;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navone {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 56.25em;
+    margin: 0 auto;
+}
+
+.navone a {
+    color: black;
+    text-decoration: none;
+}
+
+.navone ul {
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+a:hover {
+    text-decoration: underline;
+    -webkit-transition-duration: 0.4s;
+    transition: width 2s;
+}
+
+h1 {
+    color: black;
+    font-size: 2em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.63em
+}
+
+h2 {
+    font-size: 2em;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-align: center;
+    color: black;
+}
+
+h3 {
+    color: black;
+    font-size: .5em;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-size: .8em;
+    text-align: center;
+}
+
+
+/*----------------Slick: Work--------------------------------------*/
+
+.main {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 40px;
+    width: 80%;
+    color: white;
+    background: black;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h3 img {
+    width: 100%;
+    height: 600px;
+    align-content: center;
+}
+
+.work h3 {
+    color: white;
+    font-size: 1em;
+}
+
+.carousel h1 {
+    color: white;
+    padding: 50px 0 0 0;
+    font-weight: 700;
+}
+
+
+/*---------------------Experience: Beyond the Code------------*/
+
+.experience {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 50px 80px 50px;
+}
+
+.experience h3 {
+    color: white;
+    font-size: 1.75em;
+    font-weight: 800;
+}
+
+.experience p {
+    color: white;
+    font-size: 1em;
+    text-transform: none;
+    text-align: center;
+    padding: 40px 30px 20px 30px;
+}
+
+.logo {
+    text-align: center;
+    padding: 50px 0 50px 0;
+    position: relative;
+}
+
+.text {
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hide {
+    opacity: 0;
+}
+
+.hide:hover {
+    opacity: 1;
+    transition: opacity 3s;
+    height: 100%;
+}
+
+
+/*------------------------comment form----------------------------*/
+
+.wrap h2 {
+    text-align: center;
+    padding: 80px 0 65px 0;
+}
+
+#comment-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0px 50px 0 50px;
+}
+
+#comment-form input {
+    font-size: 1em;
+    /* margin: .5em 0;*/
+    border: black .2em solid;
+    text-transform: uppercase;
+    padding: 1.25em 0.63em;
+    box-sizing: border-box;
+}
+
+#comment-form textarea,
+#comment-form button {
+    font-size: 1.25em;
+    margin: 0.5em;
+    background-color: white;
+    border: black .15em solid;
+    text-transform: uppercase;
+    padding: 1.25em 0.63em;
+}
+
+#comment-form button:hover {
+    color: white;
+    background-color: black;
+    transition: width 2s;
+}
+
+.col-1-3 {
+    width: 30%;
+}
+
+.col-3-3 {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.col-1-2 {
+    width: 30%;
+}
+
+
+/*Comment Form: use this class using jQuery if a field is left blank*/
+
+.error {
+    border: 2px solid #ED5254 !important;
+}
+
+span {
+    color: #ED5254;
+    opacity: 0.5;
+    display: none;
+    font-size: 10px;
+    text-align: left;
+}
+
+
+/*-----------Tesrtionials: scrolling quotes-------------------*/
+
+.aside {
+    color: white;
+    text-align: left;
+    font-size: 26px;
+    font-weight: bold;
+    background-color: black;
+    padding: 3em;
+}
+
+.aside h2 {
+    font-size: 1.25em;
+    color: white;
+    padding: 40px 0 0 0;
+}
+
+
+/*referenced online website to style the Testimonails section*/
+
+.cust-quotes {
+    height: 200px;
+    position: relative;
+    text-align: center;
+    background-color: black;
+}
+
+.cust-quotes blockquote {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-size: 14px;
+    text-align: center;
+    opacity: 0;
+    z-index: 0;
+    transition: opacity 0.5s ease-out 0s, transform 3s ease-in 0s;
+}
+
+.cust-quotes blockquote:first-child {
+    opacity: 0;
+    transform: translateY(-10px) scale(1.1);
+}
+
+.cust-quotes blockquote:first-child + blockquote {
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 1.6s ease 0s;
+}
+
+.cust-quotes blockquote p {
+    font-size: 24px;
+    font-weight: normal;
+    font-style: italic;
+    color: #FFFFFF;
+    line-height: 30px;
+    margin-bottom: 10px;
+}
+
+.cust-quotes blockquote p:before {
+    content: '\201C';
+}
+
+.cust-quotes blockquote p:after {
+    content: '\201D';
+}
+
+.cust-quotes blockquote cite {
+    text-align: center;
+    font-size: 14px;
+    color: #898989;
+}
+
+.cust-quotes blockquote cite a {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.container {
+    max-width: 1300px;
+}
+
+
+/*--------------------------footer---------------------------*/
+
+.navthree {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    max-width: 18.75em;
+    margin: 0 auto;
+}
+
+.navthree ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 1.56em;
+}
+
+.navthree li {
+    font-size: 2.5em;
+    font-weight: 400;
+    list-style: none;
+    padding: 0 20px;
+}
+
+.navthree a {
+    color: gray;
+    text-align: center;
+}
+
+.footer p {
+    color: gray;
+    font-size: 1em;
+    padding: 2.5em 0;
+}
+
+.footer {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    font-weight: bold;
+    background-color: white;
+    /*  min-height: 6.25em;*/
+    padding-top: 1.25em;
+}
+
+
+/*--------------------------@mediaQuery---------------------------*/
+
+@media (max-width: 800px) {
+    /*----------MOBILE-----------*/
+    .hamburger {
+        display: block !important;
+        font-size: 5em;
+        color: black;
+    }
+    /*-------BODY------------*/
+    html {
+        font-size: .5em;
+        background-color: rgba(133, 4, 64, 0);
+    }
+    h1 {
+        font-size: 2.15em;
+        font-weight: 900;
+    }
+    #hide:hover {
+        height: 80%;
+    }
+    /*  --------NAV-------------------*/
+    .hide-nav {
+        display: none;
+    }
+    .navone ul {
+        display: flex;
+        flex-direction: column;
+    }
+    .navone li {
+        font-size: 1em;
+        padding: 10px;
+    }
+    /*--------WORK----------*/
+    .col-1-3 {
+        width: 100%;
+    }
+    .main h2 {
+        font-size: 3.5em;
+        padding: 30px 0 0 0;
+    }
+    .carousel h1 {
+        color: white;
+        padding: 50px 0 0 0;
+        font-weight: 700;
+        font-size: 9px;
+    }
+    h3 img {
+        width: 100%;
+        height: auto;
+        align-content: center;
+    }
+    /*------EXPERIENCE----------*/
+    .experience {
+        justify-content: space-between;
+        padding: 0 10px 0px 10px;
+    }
+    .experience p {
+        padding: 40px 30px 20px 30px;
+        font-size: 2em;
+    }
+    /*----------TESTIMONIALS---------------*/
+    .aside {
+        font-size: 14px;
+    }
+    .aside h2 {
+        font-size: 1.5em;
+        color: white;
+        padding: 0 0 35px 0;
+    }
+    .bq_quote p {
+        font-size: .75em;
+        ƒ
+    }
+    .cust-quotes blockquote p {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 20px;
+    }
+    /*----------FORM--------------*/
+    #comment-form {
+        margin: 0 auto;
+        /*padding: 15px 50px 0 50px;*/
+    }
+    .wrap h2 {
+        text-align: center;
+        padding: 10px 0 5px 0;
+    }
+}
+
+
+/*---------------end mobile responsive @media query-------------*/

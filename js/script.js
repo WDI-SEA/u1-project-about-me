@@ -2,16 +2,15 @@ $(function() {
     // -------------hide title page---------------------
     //this function loads when the page starts. It enabbles the user to click on the phrase to enter webpage with an click event listner.
     $("#title").on("mouseover", function() {
-        $("*").removeClass('hidden');
+        $("header, main, footer, #experience, .experience, #testimonials, #contact").removeClass('hidden');
         $("#title").addClass('hidden');
     });
     // ---------hamburger-------------
     $(".hamburger").on("click", function() {
-        event.preventDefault(); //when you intially click on burger nav the drop-down menu will show (removing hide-nav class)
-        $("#mobile").removeClass("hide-nav"); //when you click on burger nav second time the drop-down menu will close (adding hide-nav class)
-        $(".hamburger").on("click", function() {
-            $("#mobile").addClass("hide-nav");
-        });
+        event.preventDefault();
+
+        // when you intially click on burger nav the drop-down menu will show (removing hide-nav class)
+        $("#mobile").toggleClass("hide-nav");
     });
 
     // -----------Moblie Responsive Carousel----------------
