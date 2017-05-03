@@ -14,25 +14,11 @@ $(function() {
         });
     });
 
-    // -----------desktop carousel------------------------
-    //Accessing the slick library to add carousel feature to web page.
-    $(".single-item").slick({
-        dots: true
-    });
     // -----------Moblie Responsive Carousel----------------
     //Makes the carousel mobile responsive by designating the breakpoint at screen size 600.
     //infinite:true, means you want this to run continously
     $('.carousel').slick({
-        dots: true,
-        responsive: [{
-            breakpoint: 600,
-            settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
-                infinite: true,
-                dots: true
-            }
-        }]
+        dots: true
     });
 
     // ---------comment form--------------------------
