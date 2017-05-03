@@ -4,8 +4,6 @@ $(function() {
     $("#title").on("mouseover", function() {
         $("*").removeClass('hidden');
         $("#title").addClass('hidden');
-
-
     });
     // ---------hamburger-------------
     $(".hamburger").on("click", function() {
@@ -13,11 +11,8 @@ $(function() {
         $("#mobile").removeClass("hide-nav"); //when you click on burger nav second time the drop-down menu will close (adding hide-nav class)
         $(".hamburger").on("click", function() {
             $("#mobile").addClass("hide-nav");
-
-
         });
     });
-
 
     // -----------desktop carousel------------------------
     //Accessing the slick library to add carousel feature to web page.
@@ -90,7 +85,7 @@ $(function() {
 
 // ------------------jump to section of page slowly using navone links---------------------------
 //jQuery finds links in HTML document and fires event to slowdown speed that it takes for page to jump to section.
-$(document).on('click', 'a', function(event) {
+$('navone').on('click', function(event) {
     event.preventDefault();
 
     $('html, body').animate({
