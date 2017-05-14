@@ -414,7 +414,7 @@ span {
 
 /*--------------------------@mediaQuery---------------------------*/
 
-@media (max-width: 800px) {
+@media (max-width: 500px) {
     /*----------MOBILE-----------*/
     .hamburger {
         display: block !important;
