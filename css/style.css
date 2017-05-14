@@ -26,7 +26,7 @@ body {
 }
 
 #title h2 {
-    font-size: 5vw;
+    font-size: 2em;
 }
 
 .hidden {
@@ -131,6 +131,7 @@ p {
 img {
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 h3 img {
@@ -170,7 +171,7 @@ h3 img {
 
 .experience p {
     color: white;
-    font-size: 1em;
+    font-size: 1.5em;
     text-transform: none;
     text-align: center;
     padding: 40px 30px 20px 30px;
@@ -201,9 +202,14 @@ h3 img {
 
 /*------------------------comment form----------------------------*/
 
+#contact {
+    padding: 0 0 60px 300px;
+    width: 60%;
+}
+
 .wrap h2 {
     text-align: center;
-    padding: 80px 0 65px 0;
+    padding: 40px 0 40px 0;
 }
 
 #comment-form {
@@ -214,22 +220,33 @@ h3 img {
 }
 
 #comment-form input {
-    font-size: 1em;
+    font-size: .9em;
     /* margin: .5em 0;*/
-    border: black .2em solid;
-    text-transform: uppercase;
-    padding: 1.25em 0.63em;
+    border-radius: 5px;
+    border: black .11em solid;
+    text-transform: none;
+    padding: .5em;
     box-sizing: border-box;
 }
 
-#comment-form textarea,
-#comment-form button {
-    font-size: 1.25em;
+#comment-form textarea {
+    font-size: 1em;
     margin: 0.5em;
+    border-radius: 5px;
     background-color: white;
-    border: black .15em solid;
-    text-transform: uppercase;
-    padding: 1.25em 0.63em;
+    border: black .1em solid;
+    text-transform: none;
+    padding: .5em;
+}
+
+#comment-form button {
+    font-size: 1em;
+    margin: 0em;
+    border-radius: 5px;
+    background-color: white;
+    border: black .1em solid;
+    text-transform: lowercase;
+    padding: .5em;
 }
 
 #comment-form button:hover {
@@ -284,9 +301,6 @@ span {
     color: white;
     padding: 40px 0 0 0;
 }
-
-
-/*referenced online website to style the Testimonails section*/
 
 .cust-quotes {
     height: 200px;
@@ -468,17 +482,20 @@ span {
     }
     .bq_quote p {
         font-size: .75em;
-        ƒ
     }
     .cust-quotes blockquote p {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 20px;
-        margin-top: 20px;
+        margin-top: 10px;
+        text-align: left;
     }
     /*----------FORM--------------*/
+    #contact {
+        padding: 0;
+        width: 100%;
+    }
     #comment-form {
         margin: 0 auto;
-        /*padding: 15px 50px 0 50px;*/
     }
     .wrap h2 {
         text-align: center;
