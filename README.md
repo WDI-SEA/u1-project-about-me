@@ -1,19 +1,6 @@
-# Joanna's Portfolio
+# U1-Project-About-Me
 
-You can find Joanna's portfolio [here!](https://joannacolson/github.io/)
-
-## To-Do List
-
-* Stuff to do
-* More stuff
-
-
-These are examples. Look for GitHub Markdown Cheatsheet on Google for help.
-
-
-
-
-- A `README.md` file with explanations of:
+## Include a 'README.md' file with explanations of:
 
   - Technologies used.
 
@@ -41,10 +28,10 @@ These are examples. Look for GitHub Markdown Cheatsheet on Google for help.
 
   - Unsolved problems.
 
-  		As of 4/13/2017, carousel functions are needed.
+  		There are no unsolved problems at this time.
 
   - Your biggest wins and challenges.
 
   		Wins: learned more about each technology used.
 
-			Challenges: development of advanced features, such as the carousel functions.
+  		Challenges: development of advanced features, such as the carousel functions.
